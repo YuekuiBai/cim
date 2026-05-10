@@ -1,0 +1,49 @@
+# 赛道五赛题一配置文件（CPU优化版）
+
+# 模型配置
+model:
+  name: resnet18
+  num_classes: 10
+  pretrained: false  # CPU训练从头开始更快
+
+# 训练配置（CPU优化）
+training:
+  epochs: 30
+  batch_size: 64
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 5e-4
+  lr_scheduler: cosine
+  warmup_epochs: 2
+
+# 非线性噪声配置
+noise:
+  alpha_values: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+  alpha_schedule: fixed
+
+# 鲁棒性增强配置
+robustness:
+  methods:
+    - none
+    - inverse
+    - calibration
+  calibration_epochs: 5
+  calibration_lr: 0.01
+
+# 拓展研究配置
+extended:
+  gaussian_std_values: [0.0, 0.1, 0.2, 0.3]
+  quantization_bits: [8, 4, 2]
+
+# 数据集配置
+dataset:
+  name: CIFAR10
+  root: ./data
+  image_size: 32  # CIFAR-10原始尺寸，更快
+  num_workers: 2
+
+# 结果保存配置
+output:
+  save_dir: results
+  save_plots: true
+  save_models: true

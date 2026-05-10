@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Models and weights
+*.pth
+*.pt
+*.onnx
+*.h5
+*.ckpt
+
+# Data and datasets
+data/
+*.tar
+*.gz
+*.zip
+*.npy
+*.npz
+
+# Results - exclude large files but keep structure
+results/*.pth
+results/*.pt
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Tool directories
+.trae/
+.claude/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
