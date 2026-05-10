@@ -1,0 +1,56 @@
+model:
+  name: resnet18
+  num_classes: 10
+  pretrained: false
+
+training:
+  epochs: 30
+  batch_size: 128
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+  lr_scheduler: cosine
+  warmup_epochs: 5
+
+ste:
+  enabled: true
+  noise_config:
+    prog_noise_std: 0.01
+    drift_factor: 0.005
+    nonlinear_alpha: 0.1
+    nonlinear_beta: 0.05
+    output_noise_std: 0.01
+    quantization_bits: null
+    crosstalk_factor: 0.002
+    temperature_factor: 0.001
+    retention_loss: 0.001
+  gradient_estimator: identity
+  adaptive_scale: true
+  bias_correction: true
+  variance_stabilization: true
+
+robustness:
+  methods:
+    - ste_nat
+    - ste_sam
+    - ste_ovf
+  method_params:
+    ste_nat:
+      train_noise_strength: 1.0
+      eval_noise_strength: 1.0
+    ste_sam:
+      epsilon: 0.1
+      rho: 0.5
+    ste_ovf:
+      delta: 0.1
+
+dataset:
+  name: CIFAR10
+  root: /mnt/storage2/zyc/CIM比赛/公共数据集
+  image_size: 32
+  num_workers: 4
+
+output:
+  save_dir: results
+  save_plots: true
+  save_models: true

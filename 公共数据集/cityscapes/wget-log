@@ -1,0 +1,3 @@
+--2026-05-10 17:30:02--  https://%20datasets.citius.cloud/cityscapes/leftImg8bit_trainvaltest.zip
+正在解析主机  datasets.citius.cloud ( datasets.citius.cloud)... 失败：名称或服务未知。
+wget: 无法解析主机地址 ‘ datasets.citius.cloud’

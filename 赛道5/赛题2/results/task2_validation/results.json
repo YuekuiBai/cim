@@ -1,0 +1,18 @@
+{
+  "ns_0.0": {
+    "best_acc": 85.66,
+    "final_acc": 85.66
+  },
+  "ns_0.5": {
+    "best_acc": 84.78,
+    "final_acc": 84.78
+  },
+  "ns_1.0": {
+    "best_acc": 85.11,
+    "final_acc": 85.09
+  },
+  "ns_1.5": {
+    "best_acc": 85.0,
+    "final_acc": 85.0
+  }
+}

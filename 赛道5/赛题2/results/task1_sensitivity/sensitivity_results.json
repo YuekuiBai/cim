@@ -1,0 +1,30 @@
+[
+  {
+    "noise_strength": 0.0,
+    "accuracy": 13.71
+  },
+  {
+    "noise_strength": 0.5,
+    "accuracy": 14.03
+  },
+  {
+    "noise_strength": 1.0,
+    "accuracy": 13.71
+  },
+  {
+    "noise_strength": 1.5,
+    "accuracy": 9.6
+  },
+  {
+    "noise_strength": 2.0,
+    "accuracy": 9.52
+  },
+  {
+    "noise_strength": 2.5,
+    "accuracy": 9.06
+  },
+  {
+    "noise_strength": 3.0,
+    "accuracy": 7.45
+  }
+]

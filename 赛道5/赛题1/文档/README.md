@@ -186,6 +186,18 @@ nvidia-smi
 export CUDA_VISIBLE_DEVICES=1
 ```
 
+### 数据集位置
+
+CIFAR-10数据集已移动到公共目录：`/mnt/storage2/zyc/CIM比赛/公共数据集/cifar-10-batches-py`
+
+如需在原位置使用，可创建符号链接：
+
+```bash
+# 在赛题1代码目录创建符号链接
+cd /mnt/storage2/zyc/CIM比赛/赛道5/赛题1/代码
+ln -s ../公共数据集/cifar-10-batches-py ./data
+```
+
 ***
 
 ## 交付物清单

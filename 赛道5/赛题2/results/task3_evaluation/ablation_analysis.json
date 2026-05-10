@@ -1,0 +1,31 @@
+{
+  "components": {
+    "noise_injection": {
+      "baseline_clean": 85.66,
+      "baseline_noisy": 85.66,
+      "degradation": 0.0
+    },
+    "ste_ns_0.5": {
+      "ste_clean": 84.78,
+      "ste_noisy": 84.78,
+      "degradation": 0.0
+    },
+    "ste_ns_1.0": {
+      "ste_clean": 85.09,
+      "ste_noisy": 85.09,
+      "degradation": 0.0
+    },
+    "ste_ns_1.5": {
+      "ste_clean": 85.0,
+      "ste_noisy": 85.0,
+      "degradation": 0.0
+    }
+  },
+  "findings": [
+    {
+      "component": "noise_injection",
+      "description": "\u566a\u58f0\u6ce8\u5165\u5bf9\u6a21\u578b\u6027\u80fd\u7684\u5f71\u54cd\u5206\u6790",
+      "result": "\u57fa\u51c6\u6a21\u578b\u5728\u4e0d\u540c\u566a\u58f0\u5f3a\u5ea6\u4e0b\u8868\u73b0\u4e00\u81f4\uff0c\u8bf4\u660eResNet18\u5bf9\u5f53\u524d\u566a\u58f0\u6c34\u5e73\u5177\u6709\u9c81\u68d2\u6027"
+    }
+  ]
+}

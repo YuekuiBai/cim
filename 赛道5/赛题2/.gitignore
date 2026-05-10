@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Data - DO NOT COMMIT
+公共数据集/cifar-10-batches-py/
+公共数据集/cityscapes/
+cifar-10-batches-py/
+cityscapes/
+
+# Models
+*.pth
+*.pt
+*.pth.tar
+
+# Results
+results/*.json
+results/*.log
+results/*.png
+!results/figures/*.png
+!results/图表.md
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+*.swp
+
+# Logs
+*.log
+
+# Large files
+*.mp4
+*.pptx
+
+# Git
+.git/
+.gitignore
