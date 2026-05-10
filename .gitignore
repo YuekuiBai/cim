@@ -49,6 +49,9 @@ Thumbs.db
 .trae/
 .claude/
 
+# Environment
+.env
+
 # Virtual environments
 venv/
 env/
