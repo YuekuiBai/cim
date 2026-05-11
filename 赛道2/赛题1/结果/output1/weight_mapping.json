@@ -1,0 +1,25 @@
+{
+  "array": {
+    "row_bits": 1024,
+    "col_bits": 4096
+  },
+  "mappings": [
+    {
+      "weight": "weight_B",
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "i8",
+      "bit_width": 8,
+      "mapping": [
+        0,
+        0,
+        128,
+        1024
+      ],
+      "row_splits": 1,
+      "col_splits": 1
+    }
+  ]
+}

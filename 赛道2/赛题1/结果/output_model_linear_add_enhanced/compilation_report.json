@@ -1,0 +1,39 @@
+{
+  "ir_nodes": 2,
+  "ir_tensors": 5,
+  "optimization": {
+    "initial_nodes": 2,
+    "passes": {
+      "ConstantFolding": {
+        "nodes_before": 2,
+        "nodes_after": 2,
+        "removed": 0
+      },
+      "OperatorFusion": {
+        "nodes_before": 2,
+        "nodes_after": 1,
+        "removed": 1
+      },
+      "CSE": {
+        "nodes_before": 1,
+        "nodes_after": 1,
+        "removed": 0
+      },
+      "DCE": {
+        "nodes_before": 1,
+        "nodes_after": 1,
+        "removed": 0
+      }
+    },
+    "final_nodes": 1,
+    "total_removed": 1
+  },
+  "instructions": 1,
+  "simulation": {
+    "total_instructions": 1,
+    "log": [
+      "ELEMENTWISE: add.i32.vv, len=64"
+    ]
+  },
+  "compilation_time_ms": 14.600038528442383
+}

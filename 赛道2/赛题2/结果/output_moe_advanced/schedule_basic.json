@@ -1,0 +1,3597 @@
+{
+  "schedule": [
+    {
+      "operator_id": "expert_0",
+      "start_time": 0,
+      "end_time": 65,
+      "subcube_id": 0,
+      "is_switch": false
+    },
+    {
+      "operator_id": "expert_1",
+      "start_time": 0,
+      "end_time": 65,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "expert_10",
+      "start_time": 0,
+      "end_time": 65,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_100",
+      "start_time": 65,
+      "end_time": 129,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_100",
+      "start_time": 129,
+      "end_time": 194,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_101",
+      "start_time": 65,
+      "end_time": 129,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_101",
+      "start_time": 129,
+      "end_time": 194,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_102",
+      "start_time": 194,
+      "end_time": 258,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_102",
+      "start_time": 258,
+      "end_time": 323,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_103",
+      "start_time": 194,
+      "end_time": 258,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_103",
+      "start_time": 258,
+      "end_time": 323,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_104",
+      "start_time": 323,
+      "end_time": 387,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_104",
+      "start_time": 387,
+      "end_time": 452,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_105",
+      "start_time": 452,
+      "end_time": 516,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_105",
+      "start_time": 516,
+      "end_time": 581,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "expert_106",
+      "start_time": 0,
+      "end_time": 65,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_107",
+      "start_time": 323,
+      "end_time": 387,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_107",
+      "start_time": 387,
+      "end_time": 452,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_108",
+      "start_time": 65,
+      "end_time": 129,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_108",
+      "start_time": 129,
+      "end_time": 194,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_109",
+      "start_time": 581,
+      "end_time": 645,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_109",
+      "start_time": 645,
+      "end_time": 710,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_11",
+      "start_time": 452,
+      "end_time": 516,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_11",
+      "start_time": 516,
+      "end_time": 581,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_110",
+      "start_time": 710,
+      "end_time": 774,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_110",
+      "start_time": 774,
+      "end_time": 839,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_111",
+      "start_time": 194,
+      "end_time": 258,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_111",
+      "start_time": 258,
+      "end_time": 323,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_112",
+      "start_time": 581,
+      "end_time": 645,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_112",
+      "start_time": 645,
+      "end_time": 710,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_113",
+      "start_time": 839,
+      "end_time": 903,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_113",
+      "start_time": 903,
+      "end_time": 968,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_114",
+      "start_time": 968,
+      "end_time": 1032,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_114",
+      "start_time": 1032,
+      "end_time": 1097,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_115",
+      "start_time": 1097,
+      "end_time": 1161,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_115",
+      "start_time": 1161,
+      "end_time": 1226,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_116",
+      "start_time": 1226,
+      "end_time": 1290,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_116",
+      "start_time": 1290,
+      "end_time": 1355,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_117",
+      "start_time": 1355,
+      "end_time": 1419,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_117",
+      "start_time": 1419,
+      "end_time": 1484,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_118",
+      "start_time": 323,
+      "end_time": 387,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_118",
+      "start_time": 387,
+      "end_time": 452,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_119",
+      "start_time": 1484,
+      "end_time": 1548,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_119",
+      "start_time": 1548,
+      "end_time": 1613,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_12",
+      "start_time": 1613,
+      "end_time": 1677,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_12",
+      "start_time": 1677,
+      "end_time": 1742,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_120",
+      "start_time": 452,
+      "end_time": 516,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_120",
+      "start_time": 516,
+      "end_time": 581,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_121",
+      "start_time": 1742,
+      "end_time": 1806,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_121",
+      "start_time": 1806,
+      "end_time": 1871,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_122",
+      "start_time": 581,
+      "end_time": 645,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_122",
+      "start_time": 645,
+      "end_time": 710,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_123",
+      "start_time": 710,
+      "end_time": 774,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_123",
+      "start_time": 774,
+      "end_time": 839,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_124",
+      "start_time": 710,
+      "end_time": 774,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_124",
+      "start_time": 774,
+      "end_time": 839,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_125",
+      "start_time": 839,
+      "end_time": 903,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_125",
+      "start_time": 903,
+      "end_time": 968,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_126",
+      "start_time": 839,
+      "end_time": 903,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_126",
+      "start_time": 903,
+      "end_time": 968,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_127",
+      "start_time": 968,
+      "end_time": 1032,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_127",
+      "start_time": 1032,
+      "end_time": 1097,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_128",
+      "start_time": 1097,
+      "end_time": 1161,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_128",
+      "start_time": 1161,
+      "end_time": 1226,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_129",
+      "start_time": 1226,
+      "end_time": 1290,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_129",
+      "start_time": 1290,
+      "end_time": 1355,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_13",
+      "start_time": 1871,
+      "end_time": 1935,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_13",
+      "start_time": 1935,
+      "end_time": 2000,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_130",
+      "start_time": 2000,
+      "end_time": 2064,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_130",
+      "start_time": 2064,
+      "end_time": 2129,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_131",
+      "start_time": 2129,
+      "end_time": 2193,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_131",
+      "start_time": 2193,
+      "end_time": 2258,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_132",
+      "start_time": 1355,
+      "end_time": 1419,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_132",
+      "start_time": 1419,
+      "end_time": 1484,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_133",
+      "start_time": 1484,
+      "end_time": 1548,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_133",
+      "start_time": 1548,
+      "end_time": 1613,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_134",
+      "start_time": 2258,
+      "end_time": 2322,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_134",
+      "start_time": 2322,
+      "end_time": 2387,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_135",
+      "start_time": 1613,
+      "end_time": 1677,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_135",
+      "start_time": 1677,
+      "end_time": 1742,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_136",
+      "start_time": 968,
+      "end_time": 1032,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_136",
+      "start_time": 1032,
+      "end_time": 1097,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_137",
+      "start_time": 1097,
+      "end_time": 1161,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_137",
+      "start_time": 1161,
+      "end_time": 1226,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_138",
+      "start_time": 2387,
+      "end_time": 2451,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_138",
+      "start_time": 2451,
+      "end_time": 2516,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_139",
+      "start_time": 1226,
+      "end_time": 1290,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_139",
+      "start_time": 1290,
+      "end_time": 1355,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_14",
+      "start_time": 1355,
+      "end_time": 1419,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_14",
+      "start_time": 1419,
+      "end_time": 1484,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_140",
+      "start_time": 1484,
+      "end_time": 1548,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_140",
+      "start_time": 1548,
+      "end_time": 1613,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_141",
+      "start_time": 1742,
+      "end_time": 1806,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_141",
+      "start_time": 1806,
+      "end_time": 1871,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_142",
+      "start_time": 2516,
+      "end_time": 2580,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_142",
+      "start_time": 2580,
+      "end_time": 2645,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_143",
+      "start_time": 1613,
+      "end_time": 1677,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_143",
+      "start_time": 1677,
+      "end_time": 1742,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_144",
+      "start_time": 1742,
+      "end_time": 1806,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_144",
+      "start_time": 1806,
+      "end_time": 1871,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_145",
+      "start_time": 2645,
+      "end_time": 2709,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_145",
+      "start_time": 2709,
+      "end_time": 2774,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_146",
+      "start_time": 2774,
+      "end_time": 2838,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_146",
+      "start_time": 2838,
+      "end_time": 2903,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_147",
+      "start_time": 2903,
+      "end_time": 2967,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_147",
+      "start_time": 2967,
+      "end_time": 3032,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_148",
+      "start_time": 1871,
+      "end_time": 1935,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_148",
+      "start_time": 1935,
+      "end_time": 2000,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_149",
+      "start_time": 3032,
+      "end_time": 3096,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_149",
+      "start_time": 3096,
+      "end_time": 3161,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_15",
+      "start_time": 3161,
+      "end_time": 3225,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_15",
+      "start_time": 3225,
+      "end_time": 3290,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_150",
+      "start_time": 1871,
+      "end_time": 1935,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_150",
+      "start_time": 1935,
+      "end_time": 2000,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_151",
+      "start_time": 2000,
+      "end_time": 2064,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_151",
+      "start_time": 2064,
+      "end_time": 2129,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_152",
+      "start_time": 2129,
+      "end_time": 2193,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_152",
+      "start_time": 2193,
+      "end_time": 2258,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_153",
+      "start_time": 2258,
+      "end_time": 2322,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_153",
+      "start_time": 2322,
+      "end_time": 2387,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_154",
+      "start_time": 2000,
+      "end_time": 2064,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_154",
+      "start_time": 2064,
+      "end_time": 2129,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_155",
+      "start_time": 2387,
+      "end_time": 2451,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_155",
+      "start_time": 2451,
+      "end_time": 2516,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_156",
+      "start_time": 3290,
+      "end_time": 3354,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_156",
+      "start_time": 3354,
+      "end_time": 3419,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_157",
+      "start_time": 2129,
+      "end_time": 2193,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_157",
+      "start_time": 2193,
+      "end_time": 2258,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_158",
+      "start_time": 2258,
+      "end_time": 2322,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_158",
+      "start_time": 2322,
+      "end_time": 2387,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_159",
+      "start_time": 2516,
+      "end_time": 2580,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_159",
+      "start_time": 2580,
+      "end_time": 2645,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_16",
+      "start_time": 2645,
+      "end_time": 2709,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_16",
+      "start_time": 2709,
+      "end_time": 2774,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_160",
+      "start_time": 2774,
+      "end_time": 2838,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_160",
+      "start_time": 2838,
+      "end_time": 2903,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_161",
+      "start_time": 2903,
+      "end_time": 2967,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_161",
+      "start_time": 2967,
+      "end_time": 3032,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_162",
+      "start_time": 2387,
+      "end_time": 2451,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_162",
+      "start_time": 2451,
+      "end_time": 2516,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_163",
+      "start_time": 2516,
+      "end_time": 2580,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_163",
+      "start_time": 2580,
+      "end_time": 2645,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_164",
+      "start_time": 3032,
+      "end_time": 3096,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_164",
+      "start_time": 3096,
+      "end_time": 3161,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_165",
+      "start_time": 3419,
+      "end_time": 3483,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_165",
+      "start_time": 3483,
+      "end_time": 3548,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_166",
+      "start_time": 3161,
+      "end_time": 3225,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_166",
+      "start_time": 3225,
+      "end_time": 3290,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_167",
+      "start_time": 3290,
+      "end_time": 3354,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_167",
+      "start_time": 3354,
+      "end_time": 3419,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_168",
+      "start_time": 3548,
+      "end_time": 3612,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_168",
+      "start_time": 3612,
+      "end_time": 3677,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_169",
+      "start_time": 3677,
+      "end_time": 3741,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_169",
+      "start_time": 3741,
+      "end_time": 3806,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_17",
+      "start_time": 2645,
+      "end_time": 2709,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_17",
+      "start_time": 2709,
+      "end_time": 2774,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_170",
+      "start_time": 2774,
+      "end_time": 2838,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_170",
+      "start_time": 2838,
+      "end_time": 2903,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_171",
+      "start_time": 2903,
+      "end_time": 2967,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_171",
+      "start_time": 2967,
+      "end_time": 3032,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_172",
+      "start_time": 3032,
+      "end_time": 3096,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_172",
+      "start_time": 3096,
+      "end_time": 3161,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_173",
+      "start_time": 3161,
+      "end_time": 3225,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_173",
+      "start_time": 3225,
+      "end_time": 3290,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_174",
+      "start_time": 3290,
+      "end_time": 3354,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_174",
+      "start_time": 3354,
+      "end_time": 3419,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_175",
+      "start_time": 3419,
+      "end_time": 3483,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_175",
+      "start_time": 3483,
+      "end_time": 3548,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_176",
+      "start_time": 3806,
+      "end_time": 3870,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_176",
+      "start_time": 3870,
+      "end_time": 3935,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_177",
+      "start_time": 3419,
+      "end_time": 3483,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_177",
+      "start_time": 3483,
+      "end_time": 3548,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_178",
+      "start_time": 3548,
+      "end_time": 3612,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_178",
+      "start_time": 3612,
+      "end_time": 3677,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_179",
+      "start_time": 3935,
+      "end_time": 3999,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_179",
+      "start_time": 3999,
+      "end_time": 4064,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_18",
+      "start_time": 3677,
+      "end_time": 3741,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_18",
+      "start_time": 3741,
+      "end_time": 3806,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_180",
+      "start_time": 4064,
+      "end_time": 4128,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_180",
+      "start_time": 4128,
+      "end_time": 4193,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_181",
+      "start_time": 3806,
+      "end_time": 3870,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_181",
+      "start_time": 3870,
+      "end_time": 3935,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_182",
+      "start_time": 3935,
+      "end_time": 3999,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_182",
+      "start_time": 3999,
+      "end_time": 4064,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_183",
+      "start_time": 3548,
+      "end_time": 3612,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_183",
+      "start_time": 3612,
+      "end_time": 3677,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_184",
+      "start_time": 4064,
+      "end_time": 4128,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_184",
+      "start_time": 4128,
+      "end_time": 4193,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_185",
+      "start_time": 4193,
+      "end_time": 4257,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_185",
+      "start_time": 4257,
+      "end_time": 4322,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_186",
+      "start_time": 3677,
+      "end_time": 3741,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_186",
+      "start_time": 3741,
+      "end_time": 3806,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_187",
+      "start_time": 4322,
+      "end_time": 4386,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_187",
+      "start_time": 4386,
+      "end_time": 4451,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_188",
+      "start_time": 4193,
+      "end_time": 4257,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_188",
+      "start_time": 4257,
+      "end_time": 4322,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_189",
+      "start_time": 4322,
+      "end_time": 4386,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_189",
+      "start_time": 4386,
+      "end_time": 4451,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_19",
+      "start_time": 4451,
+      "end_time": 4515,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_19",
+      "start_time": 4515,
+      "end_time": 4580,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_190",
+      "start_time": 4451,
+      "end_time": 4515,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_190",
+      "start_time": 4515,
+      "end_time": 4580,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_191",
+      "start_time": 4580,
+      "end_time": 4644,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_191",
+      "start_time": 4644,
+      "end_time": 4709,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_192",
+      "start_time": 4580,
+      "end_time": 4644,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_192",
+      "start_time": 4644,
+      "end_time": 4709,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_193",
+      "start_time": 3806,
+      "end_time": 3870,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_193",
+      "start_time": 3870,
+      "end_time": 3935,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_194",
+      "start_time": 4709,
+      "end_time": 4773,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_194",
+      "start_time": 4773,
+      "end_time": 4838,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_195",
+      "start_time": 4709,
+      "end_time": 4773,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_195",
+      "start_time": 4773,
+      "end_time": 4838,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_196",
+      "start_time": 3935,
+      "end_time": 3999,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_196",
+      "start_time": 3999,
+      "end_time": 4064,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_197",
+      "start_time": 4838,
+      "end_time": 4902,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_197",
+      "start_time": 4902,
+      "end_time": 4967,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_198",
+      "start_time": 4967,
+      "end_time": 5031,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_198",
+      "start_time": 5031,
+      "end_time": 5096,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_199",
+      "start_time": 4064,
+      "end_time": 4128,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_199",
+      "start_time": 4128,
+      "end_time": 4193,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_2",
+      "start_time": 5096,
+      "end_time": 5160,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_2",
+      "start_time": 5160,
+      "end_time": 5225,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_20",
+      "start_time": 4838,
+      "end_time": 4902,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_20",
+      "start_time": 4902,
+      "end_time": 4967,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_200",
+      "start_time": 5225,
+      "end_time": 5289,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_200",
+      "start_time": 5289,
+      "end_time": 5354,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_201",
+      "start_time": 4967,
+      "end_time": 5031,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_201",
+      "start_time": 5031,
+      "end_time": 5096,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_202",
+      "start_time": 5096,
+      "end_time": 5160,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_202",
+      "start_time": 5160,
+      "end_time": 5225,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_203",
+      "start_time": 4193,
+      "end_time": 4257,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_203",
+      "start_time": 4257,
+      "end_time": 4322,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_204",
+      "start_time": 5225,
+      "end_time": 5289,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_204",
+      "start_time": 5289,
+      "end_time": 5354,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_205",
+      "start_time": 5354,
+      "end_time": 5418,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_205",
+      "start_time": 5418,
+      "end_time": 5483,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_206",
+      "start_time": 4322,
+      "end_time": 4386,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_206",
+      "start_time": 4386,
+      "end_time": 4451,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_207",
+      "start_time": 5483,
+      "end_time": 5547,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_207",
+      "start_time": 5547,
+      "end_time": 5612,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_208",
+      "start_time": 4451,
+      "end_time": 4515,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_208",
+      "start_time": 4515,
+      "end_time": 4580,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_209",
+      "start_time": 5612,
+      "end_time": 5676,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_209",
+      "start_time": 5676,
+      "end_time": 5741,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_21",
+      "start_time": 4580,
+      "end_time": 4644,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_21",
+      "start_time": 4644,
+      "end_time": 4709,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_210",
+      "start_time": 5354,
+      "end_time": 5418,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_210",
+      "start_time": 5418,
+      "end_time": 5483,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_211",
+      "start_time": 5483,
+      "end_time": 5547,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_211",
+      "start_time": 5547,
+      "end_time": 5612,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_212",
+      "start_time": 5612,
+      "end_time": 5676,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_212",
+      "start_time": 5676,
+      "end_time": 5741,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_213",
+      "start_time": 5741,
+      "end_time": 5805,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_213",
+      "start_time": 5805,
+      "end_time": 5870,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_214",
+      "start_time": 5870,
+      "end_time": 5934,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_214",
+      "start_time": 5934,
+      "end_time": 5999,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_215",
+      "start_time": 5999,
+      "end_time": 6063,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_215",
+      "start_time": 6063,
+      "end_time": 6128,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_216",
+      "start_time": 4709,
+      "end_time": 4773,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_216",
+      "start_time": 4773,
+      "end_time": 4838,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_217",
+      "start_time": 5741,
+      "end_time": 5805,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_217",
+      "start_time": 5805,
+      "end_time": 5870,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_218",
+      "start_time": 4838,
+      "end_time": 4902,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_218",
+      "start_time": 4902,
+      "end_time": 4967,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_219",
+      "start_time": 4967,
+      "end_time": 5031,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_219",
+      "start_time": 5031,
+      "end_time": 5096,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_22",
+      "start_time": 6128,
+      "end_time": 6192,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_22",
+      "start_time": 6192,
+      "end_time": 6257,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_220",
+      "start_time": 5096,
+      "end_time": 5160,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_220",
+      "start_time": 5160,
+      "end_time": 5225,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_221",
+      "start_time": 5870,
+      "end_time": 5934,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_221",
+      "start_time": 5934,
+      "end_time": 5999,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_222",
+      "start_time": 5225,
+      "end_time": 5289,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_222",
+      "start_time": 5289,
+      "end_time": 5354,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_223",
+      "start_time": 5354,
+      "end_time": 5418,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_223",
+      "start_time": 5418,
+      "end_time": 5483,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_224",
+      "start_time": 5483,
+      "end_time": 5547,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_224",
+      "start_time": 5547,
+      "end_time": 5612,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_225",
+      "start_time": 5612,
+      "end_time": 5676,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_225",
+      "start_time": 5676,
+      "end_time": 5741,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_226",
+      "start_time": 5741,
+      "end_time": 5805,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_226",
+      "start_time": 5805,
+      "end_time": 5870,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_227",
+      "start_time": 5870,
+      "end_time": 5934,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_227",
+      "start_time": 5934,
+      "end_time": 5999,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_228",
+      "start_time": 5999,
+      "end_time": 6063,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_228",
+      "start_time": 6063,
+      "end_time": 6128,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_229",
+      "start_time": 6257,
+      "end_time": 6321,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_229",
+      "start_time": 6321,
+      "end_time": 6386,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_23",
+      "start_time": 6128,
+      "end_time": 6192,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_23",
+      "start_time": 6192,
+      "end_time": 6257,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_230",
+      "start_time": 5999,
+      "end_time": 6063,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_230",
+      "start_time": 6063,
+      "end_time": 6128,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_231",
+      "start_time": 6386,
+      "end_time": 6450,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_231",
+      "start_time": 6450,
+      "end_time": 6515,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_232",
+      "start_time": 6128,
+      "end_time": 6192,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_232",
+      "start_time": 6192,
+      "end_time": 6257,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_233",
+      "start_time": 6257,
+      "end_time": 6321,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_233",
+      "start_time": 6321,
+      "end_time": 6386,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_234",
+      "start_time": 6515,
+      "end_time": 6579,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_234",
+      "start_time": 6579,
+      "end_time": 6644,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_235",
+      "start_time": 6644,
+      "end_time": 6708,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_235",
+      "start_time": 6708,
+      "end_time": 6773,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_236",
+      "start_time": 6773,
+      "end_time": 6837,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_236",
+      "start_time": 6837,
+      "end_time": 6902,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_237",
+      "start_time": 6902,
+      "end_time": 6966,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_237",
+      "start_time": 6966,
+      "end_time": 7031,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_238",
+      "start_time": 6386,
+      "end_time": 6450,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_238",
+      "start_time": 6450,
+      "end_time": 6515,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_239",
+      "start_time": 6257,
+      "end_time": 6321,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_239",
+      "start_time": 6321,
+      "end_time": 6386,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_24",
+      "start_time": 6386,
+      "end_time": 6450,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_24",
+      "start_time": 6450,
+      "end_time": 6515,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_240",
+      "start_time": 6515,
+      "end_time": 6579,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_240",
+      "start_time": 6579,
+      "end_time": 6644,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_241",
+      "start_time": 7031,
+      "end_time": 7095,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_241",
+      "start_time": 7095,
+      "end_time": 7160,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_242",
+      "start_time": 6644,
+      "end_time": 6708,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_242",
+      "start_time": 6708,
+      "end_time": 6773,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_243",
+      "start_time": 7160,
+      "end_time": 7224,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_243",
+      "start_time": 7224,
+      "end_time": 7289,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_244",
+      "start_time": 6515,
+      "end_time": 6579,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_244",
+      "start_time": 6579,
+      "end_time": 6644,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_245",
+      "start_time": 6644,
+      "end_time": 6708,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_245",
+      "start_time": 6708,
+      "end_time": 6773,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_246",
+      "start_time": 6773,
+      "end_time": 6837,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_246",
+      "start_time": 6837,
+      "end_time": 6902,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_247",
+      "start_time": 6773,
+      "end_time": 6837,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_247",
+      "start_time": 6837,
+      "end_time": 6902,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_248",
+      "start_time": 6902,
+      "end_time": 6966,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_248",
+      "start_time": 6966,
+      "end_time": 7031,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_249",
+      "start_time": 7289,
+      "end_time": 7353,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_249",
+      "start_time": 7353,
+      "end_time": 7418,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_25",
+      "start_time": 7031,
+      "end_time": 7095,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_25",
+      "start_time": 7095,
+      "end_time": 7160,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_250",
+      "start_time": 7418,
+      "end_time": 7482,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_250",
+      "start_time": 7482,
+      "end_time": 7547,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_251",
+      "start_time": 7160,
+      "end_time": 7224,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_251",
+      "start_time": 7224,
+      "end_time": 7289,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_252",
+      "start_time": 7289,
+      "end_time": 7353,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_252",
+      "start_time": 7353,
+      "end_time": 7418,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_253",
+      "start_time": 7547,
+      "end_time": 7611,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_253",
+      "start_time": 7611,
+      "end_time": 7676,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_254",
+      "start_time": 7418,
+      "end_time": 7482,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_254",
+      "start_time": 7482,
+      "end_time": 7547,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_255",
+      "start_time": 6902,
+      "end_time": 6966,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_255",
+      "start_time": 6966,
+      "end_time": 7031,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_26",
+      "start_time": 7547,
+      "end_time": 7611,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_26",
+      "start_time": 7611,
+      "end_time": 7676,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_27",
+      "start_time": 7031,
+      "end_time": 7095,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_27",
+      "start_time": 7095,
+      "end_time": 7160,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_28",
+      "start_time": 7160,
+      "end_time": 7224,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_28",
+      "start_time": 7224,
+      "end_time": 7289,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_29",
+      "start_time": 7676,
+      "end_time": 7740,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_29",
+      "start_time": 7740,
+      "end_time": 7805,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_3",
+      "start_time": 7805,
+      "end_time": 7869,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_3",
+      "start_time": 7869,
+      "end_time": 7934,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_30",
+      "start_time": 7676,
+      "end_time": 7740,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_30",
+      "start_time": 7740,
+      "end_time": 7805,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_31",
+      "start_time": 7289,
+      "end_time": 7353,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_31",
+      "start_time": 7353,
+      "end_time": 7418,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_32",
+      "start_time": 7934,
+      "end_time": 7998,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_32",
+      "start_time": 7998,
+      "end_time": 8063,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_33",
+      "start_time": 7418,
+      "end_time": 7482,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_33",
+      "start_time": 7482,
+      "end_time": 7547,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_34",
+      "start_time": 7547,
+      "end_time": 7611,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_34",
+      "start_time": 7611,
+      "end_time": 7676,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_35",
+      "start_time": 7805,
+      "end_time": 7869,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_35",
+      "start_time": 7869,
+      "end_time": 7934,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_36",
+      "start_time": 7676,
+      "end_time": 7740,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_36",
+      "start_time": 7740,
+      "end_time": 7805,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_37",
+      "start_time": 7805,
+      "end_time": 7869,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_37",
+      "start_time": 7869,
+      "end_time": 7934,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_38",
+      "start_time": 8063,
+      "end_time": 8127,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_38",
+      "start_time": 8127,
+      "end_time": 8192,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_39",
+      "start_time": 7934,
+      "end_time": 7998,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_39",
+      "start_time": 7998,
+      "end_time": 8063,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_4",
+      "start_time": 8063,
+      "end_time": 8127,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_4",
+      "start_time": 8127,
+      "end_time": 8192,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_40",
+      "start_time": 8192,
+      "end_time": 8256,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_40",
+      "start_time": 8256,
+      "end_time": 8321,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_41",
+      "start_time": 8192,
+      "end_time": 8256,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_41",
+      "start_time": 8256,
+      "end_time": 8321,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_42",
+      "start_time": 8321,
+      "end_time": 8385,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_42",
+      "start_time": 8385,
+      "end_time": 8450,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_43",
+      "start_time": 8321,
+      "end_time": 8385,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_43",
+      "start_time": 8385,
+      "end_time": 8450,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_44",
+      "start_time": 8450,
+      "end_time": 8514,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_44",
+      "start_time": 8514,
+      "end_time": 8579,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_45",
+      "start_time": 7934,
+      "end_time": 7998,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_45",
+      "start_time": 7998,
+      "end_time": 8063,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_46",
+      "start_time": 8063,
+      "end_time": 8127,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_46",
+      "start_time": 8127,
+      "end_time": 8192,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_47",
+      "start_time": 8192,
+      "end_time": 8256,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_47",
+      "start_time": 8256,
+      "end_time": 8321,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_48",
+      "start_time": 8450,
+      "end_time": 8514,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_48",
+      "start_time": 8514,
+      "end_time": 8579,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_49",
+      "start_time": 8579,
+      "end_time": 8643,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_49",
+      "start_time": 8643,
+      "end_time": 8708,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_5",
+      "start_time": 8579,
+      "end_time": 8643,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_5",
+      "start_time": 8643,
+      "end_time": 8708,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_50",
+      "start_time": 8321,
+      "end_time": 8385,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_50",
+      "start_time": 8385,
+      "end_time": 8450,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_51",
+      "start_time": 8708,
+      "end_time": 8772,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_51",
+      "start_time": 8772,
+      "end_time": 8837,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_52",
+      "start_time": 8450,
+      "end_time": 8514,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_52",
+      "start_time": 8514,
+      "end_time": 8579,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_53",
+      "start_time": 8579,
+      "end_time": 8643,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_53",
+      "start_time": 8643,
+      "end_time": 8708,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_54",
+      "start_time": 8837,
+      "end_time": 8901,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_54",
+      "start_time": 8901,
+      "end_time": 8966,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_55",
+      "start_time": 8708,
+      "end_time": 8772,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_55",
+      "start_time": 8772,
+      "end_time": 8837,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_56",
+      "start_time": 8837,
+      "end_time": 8901,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_56",
+      "start_time": 8901,
+      "end_time": 8966,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_57",
+      "start_time": 8708,
+      "end_time": 8772,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_57",
+      "start_time": 8772,
+      "end_time": 8837,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_58",
+      "start_time": 8837,
+      "end_time": 8901,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_58",
+      "start_time": 8901,
+      "end_time": 8966,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_59",
+      "start_time": 8966,
+      "end_time": 9030,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_59",
+      "start_time": 9030,
+      "end_time": 9095,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_6",
+      "start_time": 9095,
+      "end_time": 9159,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_6",
+      "start_time": 9159,
+      "end_time": 9224,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_60",
+      "start_time": 8966,
+      "end_time": 9030,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_60",
+      "start_time": 9030,
+      "end_time": 9095,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_61",
+      "start_time": 9095,
+      "end_time": 9159,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_61",
+      "start_time": 9159,
+      "end_time": 9224,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_62",
+      "start_time": 8966,
+      "end_time": 9030,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_62",
+      "start_time": 9030,
+      "end_time": 9095,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_63",
+      "start_time": 9224,
+      "end_time": 9288,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_63",
+      "start_time": 9288,
+      "end_time": 9353,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_64",
+      "start_time": 9353,
+      "end_time": 9417,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_64",
+      "start_time": 9417,
+      "end_time": 9482,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_65",
+      "start_time": 9224,
+      "end_time": 9288,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_65",
+      "start_time": 9288,
+      "end_time": 9353,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_66",
+      "start_time": 9353,
+      "end_time": 9417,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_66",
+      "start_time": 9417,
+      "end_time": 9482,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_67",
+      "start_time": 9482,
+      "end_time": 9546,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_67",
+      "start_time": 9546,
+      "end_time": 9611,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_68",
+      "start_time": 9095,
+      "end_time": 9159,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_68",
+      "start_time": 9159,
+      "end_time": 9224,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_69",
+      "start_time": 9611,
+      "end_time": 9675,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_69",
+      "start_time": 9675,
+      "end_time": 9740,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_7",
+      "start_time": 9224,
+      "end_time": 9288,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_7",
+      "start_time": 9288,
+      "end_time": 9353,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_70",
+      "start_time": 9353,
+      "end_time": 9417,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_70",
+      "start_time": 9417,
+      "end_time": 9482,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_71",
+      "start_time": 9740,
+      "end_time": 9804,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_71",
+      "start_time": 9804,
+      "end_time": 9869,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_72",
+      "start_time": 9482,
+      "end_time": 9546,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_72",
+      "start_time": 9546,
+      "end_time": 9611,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_73",
+      "start_time": 9869,
+      "end_time": 9933,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_73",
+      "start_time": 9933,
+      "end_time": 9998,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_74",
+      "start_time": 9482,
+      "end_time": 9546,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_74",
+      "start_time": 9546,
+      "end_time": 9611,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_75",
+      "start_time": 9611,
+      "end_time": 9675,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_75",
+      "start_time": 9675,
+      "end_time": 9740,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_76",
+      "start_time": 9998,
+      "end_time": 10062,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_76",
+      "start_time": 10062,
+      "end_time": 10127,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_77",
+      "start_time": 9740,
+      "end_time": 9804,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_77",
+      "start_time": 9804,
+      "end_time": 9869,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_78",
+      "start_time": 10127,
+      "end_time": 10191,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_78",
+      "start_time": 10191,
+      "end_time": 10256,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_79",
+      "start_time": 9611,
+      "end_time": 9675,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_79",
+      "start_time": 9675,
+      "end_time": 9740,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_8",
+      "start_time": 9869,
+      "end_time": 9933,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_8",
+      "start_time": 9933,
+      "end_time": 9998,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_80",
+      "start_time": 9998,
+      "end_time": 10062,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_80",
+      "start_time": 10062,
+      "end_time": 10127,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_81",
+      "start_time": 10127,
+      "end_time": 10191,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_81",
+      "start_time": 10191,
+      "end_time": 10256,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_82",
+      "start_time": 9740,
+      "end_time": 9804,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_82",
+      "start_time": 9804,
+      "end_time": 9869,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_83",
+      "start_time": 9869,
+      "end_time": 9933,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_83",
+      "start_time": 9933,
+      "end_time": 9998,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_84",
+      "start_time": 9998,
+      "end_time": 10062,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_84",
+      "start_time": 10062,
+      "end_time": 10127,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_85",
+      "start_time": 10127,
+      "end_time": 10191,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_85",
+      "start_time": 10191,
+      "end_time": 10256,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_86",
+      "start_time": 10256,
+      "end_time": 10320,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_86",
+      "start_time": 10320,
+      "end_time": 10385,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_87",
+      "start_time": 10256,
+      "end_time": 10320,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_87",
+      "start_time": 10320,
+      "end_time": 10385,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_88",
+      "start_time": 10385,
+      "end_time": 10449,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_88",
+      "start_time": 10449,
+      "end_time": 10514,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_89",
+      "start_time": 10256,
+      "end_time": 10320,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_89",
+      "start_time": 10320,
+      "end_time": 10385,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_9",
+      "start_time": 10385,
+      "end_time": 10449,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_9",
+      "start_time": 10449,
+      "end_time": 10514,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_90",
+      "start_time": 10385,
+      "end_time": 10449,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_90",
+      "start_time": 10449,
+      "end_time": 10514,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_91",
+      "start_time": 10514,
+      "end_time": 10578,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_91",
+      "start_time": 10578,
+      "end_time": 10643,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_92",
+      "start_time": 10514,
+      "end_time": 10578,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_92",
+      "start_time": 10578,
+      "end_time": 10643,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_93",
+      "start_time": 10514,
+      "end_time": 10578,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_93",
+      "start_time": 10578,
+      "end_time": 10643,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_94",
+      "start_time": 10643,
+      "end_time": 10707,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_94",
+      "start_time": 10707,
+      "end_time": 10772,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_95",
+      "start_time": 10772,
+      "end_time": 10836,
+      "subcube_id": 2,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_95",
+      "start_time": 10836,
+      "end_time": 10901,
+      "subcube_id": 2,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_96",
+      "start_time": 10643,
+      "end_time": 10707,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_96",
+      "start_time": 10707,
+      "end_time": 10772,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_97",
+      "start_time": 10643,
+      "end_time": 10707,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_97",
+      "start_time": 10707,
+      "end_time": 10772,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_98",
+      "start_time": 10772,
+      "end_time": 10836,
+      "subcube_id": 3,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_98",
+      "start_time": 10836,
+      "end_time": 10901,
+      "subcube_id": 3,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_expert_99",
+      "start_time": 10772,
+      "end_time": 10836,
+      "subcube_id": 1,
+      "is_switch": true
+    },
+    {
+      "operator_id": "expert_99",
+      "start_time": 10836,
+      "end_time": 10901,
+      "subcube_id": 1,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_shared_attention",
+      "start_time": 65,
+      "end_time": 129,
+      "subcube_id": 0,
+      "is_switch": true
+    },
+    {
+      "operator_id": "shared_attention",
+      "start_time": 129,
+      "end_time": 194,
+      "subcube_id": 0,
+      "is_switch": false
+    },
+    {
+      "operator_id": "SWITCH_shared_mlp",
+      "start_time": 194,
+      "end_time": 258,
+      "subcube_id": 0,
+      "is_switch": true
+    },
+    {
+      "operator_id": "shared_mlp",
+      "start_time": 258,
+      "end_time": 323,
+      "subcube_id": 0,
+      "is_switch": false
+    }
+  ],
+  "stats": {
+    "total_time": 10901,
+    "compute_time": 16770,
+    "switch_time": 16256,
+    "switch_overhead_ratio": 1.4912393358407485,
+    "subcube_utilization": 0.7574075772864874,
+    "num_steps": 512,
+    "num_switches": 254
+  }
+}

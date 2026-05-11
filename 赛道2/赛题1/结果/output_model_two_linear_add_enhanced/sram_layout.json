@@ -1,0 +1,42 @@
+{
+  "regions": [
+    {
+      "name": "tensor_hidden",
+      "start": 0,
+      "size": 256,
+      "tensor": "hidden"
+    },
+    {
+      "name": "tensor_input",
+      "start": 256,
+      "size": 128,
+      "tensor": "input"
+    },
+    {
+      "name": "tensor_output",
+      "start": 256,
+      "size": 128,
+      "tensor": "output"
+    },
+    {
+      "name": "tensor_add_const",
+      "start": 384,
+      "size": 4,
+      "tensor": "add_const"
+    },
+    {
+      "name": "acc",
+      "start": 388,
+      "size": 256,
+      "tensor": "hidden"
+    },
+    {
+      "name": "tmp",
+      "start": 644,
+      "size": 256,
+      "tensor": "hidden"
+    }
+  ],
+  "total_used": 1028,
+  "reuse_count": 1
+}

@@ -1,0 +1,115 @@
+{
+  "name": "test_two_linear_add",
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "output"
+  ],
+  "tensors": {
+    "W1": {
+      "shape": [
+        128,
+        64
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "W2": {
+      "shape": [
+        64,
+        32
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "add_const": {
+      "shape": [],
+      "dtype": "i32",
+      "addr": null
+    },
+    "input": {
+      "shape": [
+        1,
+        1,
+        128
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "hidden": {
+      "shape": [
+        -1,
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    },
+    "matmul_out": {
+      "shape": [
+        -1,
+        32
+      ],
+      "dtype": "i32",
+      "addr": null
+    },
+    "output": {
+      "shape": [
+        -1,
+        32
+      ],
+      "dtype": "i32",
+      "addr": null
+    }
+  },
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "linear",
+      "inputs": [
+        "input"
+      ],
+      "outputs": [
+        "hidden"
+      ],
+      "attrs": {}
+    },
+    {
+      "id": "node_1",
+      "type": "linear",
+      "inputs": [
+        "hidden"
+      ],
+      "outputs": [
+        "matmul_out"
+      ],
+      "attrs": {}
+    },
+    {
+      "id": "node_2",
+      "type": "elementwise",
+      "inputs": [
+        "matmul_out",
+        "add_const"
+      ],
+      "outputs": [
+        "output"
+      ],
+      "attrs": {
+        "op": "add",
+        "mode": "vi"
+      }
+    }
+  ],
+  "statistics": {
+    "total_nodes": 3,
+    "node_type_distribution": {
+      "linear": 2,
+      "elementwise": 1
+    },
+    "total_tensors": 7,
+    "total_parameters": 10240,
+    "total_operations": 20480,
+    "estimated_memory_bytes": 10884
+  }
+}

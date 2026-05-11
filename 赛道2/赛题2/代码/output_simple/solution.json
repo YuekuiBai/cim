@@ -1,0 +1,96 @@
+{
+  "cube_config": {
+    "n": 2,
+    "hw": 4096,
+    "depth": 64
+  },
+  "placements": [
+    {
+      "section": "linear_1_sec_0",
+      "subcube_id": 0,
+      "z": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        512
+      ],
+      "x": [
+        0,
+        256
+      ],
+      "volume": 131072
+    },
+    {
+      "section": "linear_2_sec_0",
+      "subcube_id": 1,
+      "z": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        256
+      ],
+      "x": [
+        0,
+        128
+      ],
+      "volume": 32768
+    },
+    {
+      "section": "linear_3_sec_0",
+      "subcube_id": 2,
+      "z": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        128
+      ],
+      "x": [
+        0,
+        64
+      ],
+      "volume": 8192
+    }
+  ],
+  "schedule": [
+    {
+      "operator": "linear_1",
+      "subcube_id": 0,
+      "start_cycle": 0,
+      "end_cycle": 65,
+      "switching_penalty": 0,
+      "depends_on": []
+    },
+    {
+      "operator": "linear_2",
+      "subcube_id": 1,
+      "start_cycle": 65,
+      "end_cycle": 130,
+      "switching_penalty": 0,
+      "depends_on": [
+        "linear_1"
+      ]
+    },
+    {
+      "operator": "linear_3",
+      "subcube_id": 2,
+      "start_cycle": 130,
+      "end_cycle": 195,
+      "switching_penalty": 0,
+      "depends_on": [
+        "linear_2"
+      ]
+    }
+  ],
+  "metrics": {
+    "total_latency": 195,
+    "space_utilization": 4.00543212890625e-05,
+    "total_params_mapped": 172032,
+    "total_capacity": 4294967296
+  }
+}

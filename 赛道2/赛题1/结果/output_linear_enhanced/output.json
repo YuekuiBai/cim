@@ -1,0 +1,320 @@
+{
+  "instructions": [
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/640",
+        "/*input*/512",
+        "/*index*/0",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/512",
+        "/*index*/1",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/0",
+        "/*src2*/2",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/640",
+        "/*src2*/1152",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/512",
+        "/*index*/2",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/0",
+        "/*src2*/4",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/640",
+        "/*src2*/1152",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/512",
+        "/*index*/3",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/0",
+        "/*src2*/8",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/640",
+        "/*src2*/1152",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/512",
+        "/*index*/4",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/0",
+        "/*src2*/16",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/640",
+        "/*src2*/1152",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/512",
+        "/*index*/5",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/0",
+        "/*src2*/32",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/640",
+        "/*src2*/1152",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/512",
+        "/*index*/6",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/0",
+        "/*src2*/64",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/640",
+        "/*src2*/1152",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/512",
+        "/*index*/7",
+        "/*weightPos*/[0, 0, 128, 1024]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/0",
+        "/*src2*/128",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.sub.i32.vv",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/640",
+        "/*src2*/1152",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "mem.copy.i32.i32",
+      "operands": [
+        "/*dst*/0",
+        "/*src*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    }
+  ],
+  "sram_layout": {
+    "regions": [
+      {
+        "name": "tensor_output",
+        "start": 0,
+        "size": 512,
+        "tensor": "output"
+      },
+      {
+        "name": "tensor_input",
+        "start": 512,
+        "size": 128,
+        "tensor": "input"
+      },
+      {
+        "name": "acc",
+        "start": 640,
+        "size": 512,
+        "tensor": "output"
+      },
+      {
+        "name": "tmp",
+        "start": 1152,
+        "size": 512,
+        "tensor": "output"
+      }
+    ],
+    "total_used": 1664,
+    "reuse_count": 0
+  },
+  "weight_mapping": {
+    "array": {
+      "row_bits": 1024,
+      "col_bits": 4096
+    },
+    "mappings": [
+      {
+        "weight": "weight_B",
+        "shape": [
+          128,
+          128
+        ],
+        "dtype": "i8",
+        "bit_width": 8,
+        "mapping": [
+          0,
+          0,
+          128,
+          1024
+        ],
+        "row_splits": 1,
+        "col_splits": 1
+      }
+    ]
+  },
+  "compilation_stats": {
+    "ir_nodes": 1,
+    "ir_tensors": 3,
+    "optimization": {
+      "initial_nodes": 1,
+      "passes": {
+        "ConstantFolding": {
+          "nodes_before": 1,
+          "nodes_after": 1,
+          "removed": 0
+        },
+        "OperatorFusion": {
+          "nodes_before": 1,
+          "nodes_after": 1,
+          "removed": 0
+        },
+        "CSE": {
+          "nodes_before": 1,
+          "nodes_after": 1,
+          "removed": 0
+        },
+        "DCE": {
+          "nodes_before": 1,
+          "nodes_after": 1,
+          "removed": 0
+        }
+      },
+      "final_nodes": 1,
+      "total_removed": 0
+    },
+    "instructions": 23
+  }
+}

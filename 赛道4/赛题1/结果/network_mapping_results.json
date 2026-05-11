@@ -1,6 +1,7 @@
 {
   "total_arrays": 2,
-  "total_bandwidth": 1613824,
+  "total_bandwidth": 2274020,
+  "total_latency": 0.0016512000000000002,
   "layer_mappings": [
     {
       "layer_type": "Conv2d",
@@ -12,8 +13,21 @@
       ],
       "total_weights": 1728,
       "stride": 1,
+      "padding": 1,
+      "kernel_size": [
+        3,
+        3
+      ],
       "arrays_needed": 1,
-      "utilization": 0.10546874999999936
+      "utilization": 0.10546875,
+      "tiling": {
+        "tiling_factor": 1,
+        "row_splits": 1,
+        "col_splits": 1,
+        "parallel_arrays": 1
+      },
+      "input_reuse_factor": 3,
+      "output_reuse_factor": 64
     },
     {
       "layer_type": "Linear",
@@ -22,8 +36,18 @@
         512
       ],
       "total_weights": 5120,
+      "in_features": 512,
+      "out_features": 10,
       "arrays_needed": 1,
-      "utilization": 0.3124999999999981
+      "utilization": 0.3125,
+      "tiling": {
+        "tiling_factor": 1,
+        "row_splits": 1,
+        "col_splits": 4,
+        "parallel_arrays": 4
+      },
+      "output_bits": 8,
+      "batch_processing_support": true
     }
   ],
   "data_paths": [
@@ -37,9 +61,16 @@
         32,
         32
       ],
+      "output_size": [
+        33,
+        33
+      ],
       "word_length": 1024,
-      "bandwidth_requirement": 1572864,
-      "latency_per_layer": 6.656e-05
+      "output_word_length": 1089,
+      "bandwidth_requirement": 2269824,
+      "latency_per_layer": 0.0016384000000000001,
+      "memory_access_bits": 2269824,
+      "compute_intensity": 0.08661816951446456
     },
     {
       "type": "Linear",
@@ -48,14 +79,31 @@
       "input_precision": 8,
       "output_precision": 10,
       "word_length": 512,
-      "bandwidth_requirement": 40960,
-      "latency_per_layer": 3.328e-05
+      "output_word_length": 10,
+      "batch_size": 1,
+      "bandwidth_requirement": 4196,
+      "latency_per_layer": 1.2800000000000001e-05,
+      "memory_access_bits": 4196,
+      "compute_intensity": 1.2202097235462055
     }
   ],
   "communication_overhead": {
-    "total_bandwidth_bits_per_inference": 1613824,
-    "inter_array_bandwidth": 161382.40000000002,
-    "memory_access_reduction_factor": 100,
-    "total_latency_per_inference": 9.983999999999999e-05
+    "total_bandwidth_bits_per_inference": 2274020,
+    "inter_array_bandwidth": 227402.0,
+    "memory_access_reduction_factor": 112.23147742218326,
+    "total_latency_per_inference": 0.0016512000000000002,
+    "latency_per_inference_ms": 1.6512000000000002,
+    "average_array_utilization": 0.208984375
+  },
+  "optimization_summary": {
+    "total_layers": 2,
+    "average_utilization": 0.208984375,
+    "utilization_bottlenecks": 2,
+    "high_latency_layers": 2,
+    "recommendations": [
+      "\u8003\u8651\u589e\u5927\u9635\u5217\u5c3a\u5bf8\u4ee5\u63d0\u9ad8\u5229\u7528\u7387(\u5f53\u524d20.9%)",
+      "\u4f18\u53162\u4e2a\u4f4e\u5229\u7528\u7387\u5c42\u7684\u6620\u5c04",
+      "\u542f\u7528\u6570\u636e\u590d\u7528\u4ee5\u964d\u4f4e\u5e26\u5bbd\u9700\u6c42"
+    ]
   }
 }

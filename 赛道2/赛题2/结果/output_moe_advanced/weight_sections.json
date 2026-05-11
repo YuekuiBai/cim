@@ -1,0 +1,3356 @@
+[
+  {
+    "name": "shared_attention_sec_0",
+    "shape_2d": [
+      4096,
+      4096
+    ],
+    "depth": 1,
+    "parent_operator": "shared_attention",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_0_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_0",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_1_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_1",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_2_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_2",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_3_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_3",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_4_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_4",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_5_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_5",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_6_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_6",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_7_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_7",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_8_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_8",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_9_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_9",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_10_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_10",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_11_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_11",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_12_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_12",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_13_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_13",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_14_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_14",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_15_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_15",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_16_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_16",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_17_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_17",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_18_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_18",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_19_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_19",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_20_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_20",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_21_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_21",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_22_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_22",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_23_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_23",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_24_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_24",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_25_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_25",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_26_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_26",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_27_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_27",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_28_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_28",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_29_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_29",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_30_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_30",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_31_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_31",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_32_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_32",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_33_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_33",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_34_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_34",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_35_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_35",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_36_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_36",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_37_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_37",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_38_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_38",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_39_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_39",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_40_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_40",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_41_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_41",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_42_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_42",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_43_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_43",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_44_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_44",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_45_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_45",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_46_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_46",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_47_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_47",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_48_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_48",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_49_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_49",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_50_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_50",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_51_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_51",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_52_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_52",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_53_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_53",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_54_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_54",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_55_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_55",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_56_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_56",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_57_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_57",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_58_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_58",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_59_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_59",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_60_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_60",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_61_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_61",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_62_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_62",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_63_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_63",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_64_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_64",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_65_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_65",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_66_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_66",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_67_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_67",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_68_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_68",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_69_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_69",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_70_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_70",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_71_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_71",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_72_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_72",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_73_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_73",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_74_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_74",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_75_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_75",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_76_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_76",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_77_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_77",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_78_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_78",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_79_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_79",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_80_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_80",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_81_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_81",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_82_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_82",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_83_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_83",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_84_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_84",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_85_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_85",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_86_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_86",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_87_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_87",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_88_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_88",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_89_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_89",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_90_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_90",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_91_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_91",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_92_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_92",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_93_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_93",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_94_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_94",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_95_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_95",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_96_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_96",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_97_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_97",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_98_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_98",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_99_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_99",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_100_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_100",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_101_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_101",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_102_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_102",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_103_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_103",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_104_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_104",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_105_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_105",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_106_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_106",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_107_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_107",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_108_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_108",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_109_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_109",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_110_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_110",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_111_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_111",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_112_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_112",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_113_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_113",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_114_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_114",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_115_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_115",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_116_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_116",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_117_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_117",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_118_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_118",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_119_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_119",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_120_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_120",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_121_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_121",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_122_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_122",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_123_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_123",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_124_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_124",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_125_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_125",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_126_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_126",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_127_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_127",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_128_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_128",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_129_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_129",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_130_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_130",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_131_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_131",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_132_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_132",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_133_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_133",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_134_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_134",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_135_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_135",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_136_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_136",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_137_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_137",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_138_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_138",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_139_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_139",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_140_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_140",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_141_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_141",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_142_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_142",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_143_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_143",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_144_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_144",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_145_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_145",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_146_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_146",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_147_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_147",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_148_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_148",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_149_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_149",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_150_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_150",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_151_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_151",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_152_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_152",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_153_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_153",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_154_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_154",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_155_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_155",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_156_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_156",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_157_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_157",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_158_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_158",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_159_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_159",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_160_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_160",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_161_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_161",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_162_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_162",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_163_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_163",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_164_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_164",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_165_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_165",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_166_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_166",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_167_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_167",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_168_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_168",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_169_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_169",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_170_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_170",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_171_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_171",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_172_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_172",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_173_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_173",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_174_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_174",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_175_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_175",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_176_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_176",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_177_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_177",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_178_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_178",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_179_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_179",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_180_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_180",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_181_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_181",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_182_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_182",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_183_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_183",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_184_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_184",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_185_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_185",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_186_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_186",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_187_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_187",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_188_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_188",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_189_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_189",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_190_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_190",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_191_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_191",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_192_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_192",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_193_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_193",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_194_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_194",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_195_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_195",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_196_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_196",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_197_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_197",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_198_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_198",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_199_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_199",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_200_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_200",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_201_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_201",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_202_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_202",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_203_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_203",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_204_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_204",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_205_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_205",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_206_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_206",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_207_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_207",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_208_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_208",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_209_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_209",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_210_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_210",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_211_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_211",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_212_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_212",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_213_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_213",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_214_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_214",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_215_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_215",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_216_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_216",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_217_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_217",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_218_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_218",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_219_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_219",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_220_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_220",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_221_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_221",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_222_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_222",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_223_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_223",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_224_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_224",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_225_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_225",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_226_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_226",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_227_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_227",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_228_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_228",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_229_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_229",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_230_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_230",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_231_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_231",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_232_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_232",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_233_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_233",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_234_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_234",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_235_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_235",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_236_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_236",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_237_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_237",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_238_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_238",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_239_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_239",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_240_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_240",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_241_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_241",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_242_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_242",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_243_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_243",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_244_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_244",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_245_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_245",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_246_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_246",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_247_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_247",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_248_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_248",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_249_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_249",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_250_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_250",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_251_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_251",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_252_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_252",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_253_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_253",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_254_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_254",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "expert_255_sec_0",
+    "shape_2d": [
+      4096,
+      1024
+    ],
+    "depth": 1,
+    "parent_operator": "expert_255",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  },
+  {
+    "name": "shared_mlp_sec_0",
+    "shape_2d": [
+      4096,
+      4096
+    ],
+    "depth": 1,
+    "parent_operator": "shared_mlp",
+    "section_idx": 0,
+    "total_sections": 1,
+    "is_replicated": false,
+    "replication_idx": 0
+  }
+]

@@ -1,0 +1,116 @@
+{
+  "name": "test_linear_sub_div",
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "output"
+  ],
+  "tensors": {
+    "W": {
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "sub_const": {
+      "shape": [],
+      "dtype": "i32",
+      "addr": null
+    },
+    "div_const": {
+      "shape": [],
+      "dtype": "i32",
+      "addr": null
+    },
+    "input": {
+      "shape": [
+        1,
+        1,
+        64
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "matmul_out": {
+      "shape": [
+        -1,
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    },
+    "sub_out": {
+      "shape": [
+        -1,
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    },
+    "output": {
+      "shape": [
+        -1,
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    }
+  },
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "linear",
+      "inputs": [
+        "input"
+      ],
+      "outputs": [
+        "matmul_out"
+      ],
+      "attrs": {}
+    },
+    {
+      "id": "node_1",
+      "type": "elementwise",
+      "inputs": [
+        "matmul_out",
+        "sub_const"
+      ],
+      "outputs": [
+        "sub_out"
+      ],
+      "attrs": {
+        "op": "sub",
+        "mode": "vi"
+      }
+    },
+    {
+      "id": "node_2",
+      "type": "elementwise",
+      "inputs": [
+        "sub_out",
+        "div_const"
+      ],
+      "outputs": [
+        "output"
+      ],
+      "attrs": {
+        "op": "div",
+        "mode": "vi"
+      }
+    }
+  ],
+  "statistics": {
+    "total_nodes": 3,
+    "node_type_distribution": {
+      "linear": 1,
+      "elementwise": 2
+    },
+    "total_tensors": 7,
+    "total_parameters": 4096,
+    "total_operations": 8192,
+    "estimated_memory_bytes": 4936
+  }
+}

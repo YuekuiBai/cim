@@ -1,0 +1,61 @@
+{
+  "ir_nodes": 1,
+  "ir_tensors": 3,
+  "optimization": {
+    "initial_nodes": 1,
+    "passes": {
+      "ConstantFolding": {
+        "nodes_before": 1,
+        "nodes_after": 1,
+        "removed": 0
+      },
+      "OperatorFusion": {
+        "nodes_before": 1,
+        "nodes_after": 1,
+        "removed": 0
+      },
+      "CSE": {
+        "nodes_before": 1,
+        "nodes_after": 1,
+        "removed": 0
+      },
+      "DCE": {
+        "nodes_before": 1,
+        "nodes_after": 1,
+        "removed": 0
+      }
+    },
+    "final_nodes": 1,
+    "total_removed": 0
+  },
+  "instructions": 23,
+  "simulation": {
+    "total_instructions": 23,
+    "log": [
+      "CIM_BIT: bit=0, result_len=128",
+      "CIM_BIT: bit=1, result_len=128",
+      "ELEMENTWISE: mul.i32.vi, len=128",
+      "ELEMENTWISE: add.i32.vv, len=128",
+      "CIM_BIT: bit=2, result_len=128",
+      "ELEMENTWISE: mul.i32.vi, len=128",
+      "ELEMENTWISE: add.i32.vv, len=128",
+      "CIM_BIT: bit=3, result_len=128",
+      "ELEMENTWISE: mul.i32.vi, len=128",
+      "ELEMENTWISE: add.i32.vv, len=128",
+      "CIM_BIT: bit=4, result_len=128",
+      "ELEMENTWISE: mul.i32.vi, len=128",
+      "ELEMENTWISE: add.i32.vv, len=128",
+      "CIM_BIT: bit=5, result_len=128",
+      "ELEMENTWISE: mul.i32.vi, len=128",
+      "ELEMENTWISE: add.i32.vv, len=128",
+      "CIM_BIT: bit=6, result_len=128",
+      "ELEMENTWISE: mul.i32.vi, len=128",
+      "ELEMENTWISE: add.i32.vv, len=128",
+      "CIM_BIT: bit=7, result_len=128",
+      "ELEMENTWISE: mul.i32.vi, len=128",
+      "ELEMENTWISE: sub.i32.vv, len=128",
+      "MEM_COPY: i32->i32, len=128"
+    ]
+  },
+  "compilation_time_ms": 22.976398468017578
+}

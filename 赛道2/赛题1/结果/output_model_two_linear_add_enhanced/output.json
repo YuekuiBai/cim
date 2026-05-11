@@ -1,0 +1,342 @@
+{
+  "instructions": [
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/388",
+        "/*input*/256",
+        "/*index*/0",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/256",
+        "/*index*/1",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/644",
+        "/*src1*/0",
+        "/*src2*/2",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/388",
+        "/*src1*/388",
+        "/*src2*/644",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/256",
+        "/*index*/2",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/644",
+        "/*src1*/0",
+        "/*src2*/4",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/388",
+        "/*src1*/388",
+        "/*src2*/644",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/256",
+        "/*index*/3",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/644",
+        "/*src1*/0",
+        "/*src2*/8",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/388",
+        "/*src1*/388",
+        "/*src2*/644",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/256",
+        "/*index*/4",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/644",
+        "/*src1*/0",
+        "/*src2*/16",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/388",
+        "/*src1*/388",
+        "/*src2*/644",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/256",
+        "/*index*/5",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/644",
+        "/*src1*/0",
+        "/*src2*/32",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/388",
+        "/*src1*/388",
+        "/*src2*/644",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/256",
+        "/*index*/6",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/644",
+        "/*src1*/0",
+        "/*src2*/64",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/388",
+        "/*src1*/388",
+        "/*src2*/644",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/0",
+        "/*input*/256",
+        "/*index*/7",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/644",
+        "/*src1*/0",
+        "/*src2*/128",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.sub.i32.vv",
+      "operands": [
+        "/*dst*/388",
+        "/*src1*/388",
+        "/*src2*/644",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "mem.copy.i32.i32",
+      "operands": [
+        "/*dst*/0",
+        "/*src*/388",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/256",
+        "/*src1*/0",
+        "/*src2*/384",
+        "/*len*/32"
+      ],
+      "comment": ""
+    }
+  ],
+  "sram_layout": {
+    "regions": [
+      {
+        "name": "tensor_hidden",
+        "start": 0,
+        "size": 256,
+        "tensor": "hidden"
+      },
+      {
+        "name": "tensor_input",
+        "start": 256,
+        "size": 128,
+        "tensor": "input"
+      },
+      {
+        "name": "tensor_output",
+        "start": 256,
+        "size": 128,
+        "tensor": "output"
+      },
+      {
+        "name": "tensor_add_const",
+        "start": 384,
+        "size": 4,
+        "tensor": "add_const"
+      },
+      {
+        "name": "acc",
+        "start": 388,
+        "size": 256,
+        "tensor": "hidden"
+      },
+      {
+        "name": "tmp",
+        "start": 644,
+        "size": 256,
+        "tensor": "hidden"
+      }
+    ],
+    "total_used": 1028,
+    "reuse_count": 1
+  },
+  "weight_mapping": {
+    "array": {
+      "row_bits": 1024,
+      "col_bits": 4096
+    },
+    "mappings": [
+      {
+        "weight": "W1",
+        "shape": [
+          128,
+          64
+        ],
+        "dtype": "i8",
+        "bit_width": 8,
+        "mapping": [
+          0,
+          0,
+          128,
+          512
+        ],
+        "row_splits": 1,
+        "col_splits": 1
+      }
+    ]
+  },
+  "compilation_stats": {
+    "ir_nodes": 3,
+    "ir_tensors": 7,
+    "optimization": {
+      "initial_nodes": 3,
+      "passes": {
+        "ConstantFolding": {
+          "nodes_before": 3,
+          "nodes_after": 3,
+          "removed": 0
+        },
+        "OperatorFusion": {
+          "nodes_before": 3,
+          "nodes_after": 2,
+          "removed": 1
+        },
+        "CSE": {
+          "nodes_before": 2,
+          "nodes_after": 2,
+          "removed": 0
+        },
+        "DCE": {
+          "nodes_before": 2,
+          "nodes_after": 2,
+          "removed": 0
+        }
+      },
+      "final_nodes": 2,
+      "total_removed": 1
+    },
+    "instructions": 24
+  }
+}

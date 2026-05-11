@@ -1,12 +1,14 @@
 """
 IR Nodes for CIM Compiler - Problem 1
 Supports linear and elementwise (add/sub/mul/div) operators
+Extended with Placeholder, Constant, Input/Output nodes for complete graph representation
 """
 
 from enum import Enum
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict, Any
 import json
+import numpy as np
 
 
 class IRNodeType(Enum):
@@ -15,12 +17,18 @@ class IRNodeType(Enum):
     INPUT = "input"
     OUTPUT = "output"
     CONSTANT = "constant"
+    PLACEHOLDER = "placeholder"
+    RELU = "relu"
+    RESHAPE = "reshape"
+    CONCAT = "concat"
+    SPLIT = "split"
 
 
 class DataType(Enum):
     INT8 = "i8"
     INT16 = "i16"
     INT32 = "i32"
+    FLOAT32 = "f32"
 
 
 class ElementwiseOp(Enum):
@@ -28,18 +36,23 @@ class ElementwiseOp(Enum):
     SUB = "sub"
     MUL = "mul"
     DIV = "div"
+    RELU = "relu"
+    SIGMOID = "sigmoid"
+    TANH = "tanh"
 
 
 DTYPE_BYTES = {
     DataType.INT8: 1,
     DataType.INT16: 2,
     DataType.INT32: 4,
+    DataType.FLOAT32: 4,
 }
 
 DTYPE_BITS = {
     DataType.INT8: 8,
     DataType.INT16: 16,
     DataType.INT32: 32,
+    DataType.FLOAT32: 32,
 }
 
 
@@ -102,6 +115,96 @@ class ElementwiseNode(IRNode):
 
 
 @dataclass
+class PlaceholderNode(IRNode):
+    """Represents input placeholder node"""
+    shape: List[int] = field(default_factory=list)
+    dtype: DataType = DataType.INT8
+
+    def __post_init__(self):
+        self.node_type = IRNodeType.PLACEHOLDER
+        self.attributes["shape"] = self.shape
+        self.attributes["dtype"] = self.dtype.value
+
+
+@dataclass
+class ConstantNode(IRNode):
+    """Represents constant value node (bias, scale, etc.)"""
+    value: Optional[np.ndarray] = None
+    dtype: DataType = DataType.INT32
+
+    def __post_init__(self):
+        self.node_type = IRNodeType.CONSTANT
+        if self.value is not None:
+            self.attributes["shape"] = list(self.value.shape)
+            self.attributes["dtype"] = self.dtype.value
+            self.attributes["num_elements"] = self.value.size
+
+    @property
+    def num_elements(self) -> int:
+        if self.value is not None:
+            return self.value.size
+        return 0
+
+    @property
+    def size_bytes(self) -> int:
+        if self.value is not None:
+            return self.value.nbytes
+        return 0
+
+
+@dataclass
+class OutputNode(IRNode):
+    """Represents output node marking graph outputs"""
+    shape: List[int] = field(default_factory=list)
+    dtype: DataType = DataType.INT32
+
+    def __post_init__(self):
+        self.node_type = IRNodeType.OUTPUT
+        self.attributes["shape"] = self.shape
+        self.attributes["dtype"] = self.dtype.value
+
+
+@dataclass
+class ReLUNode(IRNode):
+    """Represents ReLU activation node"""
+    def __post_init__(self):
+        self.node_type = IRNodeType.RELU
+
+
+@dataclass
+class ReshapeNode(IRNode):
+    """Represents reshape operation"""
+    target_shape: List[int] = field(default_factory=list)
+
+    def __post_init__(self):
+        self.node_type = IRNodeType.RESHAPE
+        self.attributes["target_shape"] = self.target_shape
+
+
+@dataclass
+class ConcatNode(IRNode):
+    """Represents concatenation operation"""
+    axis: int = 0
+
+    def __post_init__(self):
+        self.node_type = IRNodeType.CONCAT
+        self.attributes["axis"] = self.axis
+
+
+@dataclass
+class SplitNode(IRNode):
+    """Represents split operation"""
+    axis: int = 0
+    split_sizes: Optional[List[int]] = None
+
+    def __post_init__(self):
+        self.node_type = IRNodeType.SPLIT
+        self.attributes["axis"] = self.axis
+        if self.split_sizes:
+            self.attributes["split_sizes"] = self.split_sizes
+
+
+@dataclass
 class IRGraph:
     name: str
     nodes: List[IRNode] = field(default_factory=list)
@@ -159,7 +262,57 @@ class IRGraph:
                 }
                 for n in self.nodes
             ],
+            "statistics": self.get_statistics(),
         }
         with open(path, "w") as f:
             json.dump(data, f, indent=2)
         return data
+
+    def get_statistics(self) -> Dict[str, Any]:
+        """Get graph statistics for analysis"""
+        node_counts = {}
+        for node in self.nodes:
+            node_type = node.node_type.value
+            node_counts[node_type] = node_counts.get(node_type, 0) + 1
+
+        total_params = 0
+        total_ops = 0
+        for node in self.nodes:
+            if node.node_type == IRNodeType.LINEAR:
+                cin = node.cin if hasattr(node, 'cin') else 0
+                cout = node.cout if hasattr(node, 'cout') else 0
+                total_params += cin * cout
+                total_ops += 2 * cin * cout
+
+        tensor_memory = sum(t.size_bytes for t in self.tensors.values())
+
+        return {
+            "total_nodes": len(self.nodes),
+            "node_type_distribution": node_counts,
+            "total_tensors": len(self.tensors),
+            "total_parameters": total_params,
+            "total_operations": total_ops,
+            "estimated_memory_bytes": tensor_memory,
+        }
+
+    def validate(self) -> List[str]:
+        """Validate IR graph integrity"""
+        errors = []
+        defined_tensors = set()
+
+        for inp in self.input_names:
+            defined_tensors.add(inp)
+
+        for node in self.nodes:
+            for inp in node.inputs:
+                if inp not in defined_tensors:
+                    errors.append(f"Node {node.node_id}: input tensor '{inp}' not defined")
+
+            for out in node.outputs:
+                defined_tensors.add(out)
+
+        for out in self.output_names:
+            if out not in defined_tensors:
+                errors.append(f"Output tensor '{out}' not defined by any node")
+
+        return errors

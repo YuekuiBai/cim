@@ -11,7 +11,7 @@ import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from model_parser.model_loader import ModelParser
+from model_parser.model_loader import ModelLoader
 from model_parser.weight_partitioner import WeightPartitioner
 from model_parser.trace_analyzer import ActivationTraceAnalyzer
 from compiler_mapping.weight_cube import CubeConfig
@@ -29,11 +29,16 @@ def compile_model(model_path, trace_path=None, output_dir="output"):
 
     # Step 1: Parse model
     print("\n[Step 1] Parsing model...")
-    parser = ModelParser(model_path)
-    operators = parser.parse()
+    parser = ModelLoader()
+    operators = parser.load_json(model_path)
+    
+    # Calculate total params and check if MoE
+    total_params = sum(op.num_params for op in operators)
+    is_moe = any(op.is_sparse for op in operators)
+    
     print(f"  Operators: {len(operators)}")
-    print(f"  Total params: {parser.total_params:,}")
-    print(f"  Is MoE: {parser.is_moe}")
+    print(f"  Total params: {total_params:,}")
+    print(f"  Is MoE: {is_moe}")
 
     parsed_path = os.path.join(output_dir, "parsed_operators.json")
     parsed_data = {
@@ -48,7 +53,7 @@ def compile_model(model_path, trace_path=None, output_dir="output"):
             }
             for op in operators
         ],
-        "total_params": parser.total_params,
+        "total_params": total_params,
     }
     with open(parsed_path, 'w') as f:
         json.dump(parsed_data, f, indent=2)
@@ -71,7 +76,6 @@ def compile_model(model_path, trace_path=None, output_dir="output"):
 
     # Step 3: Configure 3D space
     print("\n[Step 3] Configuring 3D resource space...")
-    total_params = parser.total_params
     hw = 4096
     n = 2
     min_depth = (total_params + (n * n * hw * hw - 1)) // (n * n * hw * hw)

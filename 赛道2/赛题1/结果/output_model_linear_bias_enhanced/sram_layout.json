@@ -1,0 +1,30 @@
+{
+  "regions": [
+    {
+      "name": "tensor_input",
+      "start": 0,
+      "size": 128,
+      "tensor": "input"
+    },
+    {
+      "name": "tensor_output",
+      "start": 0,
+      "size": 256,
+      "tensor": "output"
+    },
+    {
+      "name": "acc",
+      "start": 128,
+      "size": 256,
+      "tensor": "output"
+    },
+    {
+      "name": "tmp",
+      "start": 384,
+      "size": 256,
+      "tensor": "output"
+    }
+  ],
+  "total_used": 896,
+  "reuse_count": 1
+}

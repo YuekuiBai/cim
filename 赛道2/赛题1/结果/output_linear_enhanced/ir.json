@@ -1,0 +1,59 @@
+{
+  "name": "test_linear",
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "output"
+  ],
+  "tensors": {
+    "weight_B": {
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "input": {
+      "shape": [
+        1,
+        1,
+        128
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "output": {
+      "shape": [
+        -1,
+        128
+      ],
+      "dtype": "i32",
+      "addr": null
+    }
+  },
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "linear",
+      "inputs": [
+        "input"
+      ],
+      "outputs": [
+        "output"
+      ],
+      "attrs": {}
+    }
+  ],
+  "statistics": {
+    "total_nodes": 1,
+    "node_type_distribution": {
+      "linear": 1
+    },
+    "total_tensors": 3,
+    "total_parameters": 16384,
+    "total_operations": 32768,
+    "estimated_memory_bytes": 17024
+  }
+}

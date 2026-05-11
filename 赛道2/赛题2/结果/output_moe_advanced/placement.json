@@ -1,0 +1,1034 @@
+{
+  "expert_0_sec_0": {
+    "subcube_id": 0,
+    "z_start": 0
+  },
+  "expert_147_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_176_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_169_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_249_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_36_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_148_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_63_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_179_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_207_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_213_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_196_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_103_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_100_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_24_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_98_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_155_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_195_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_96_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_205_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_243_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_109_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_77_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_190_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_8_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_112_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_12_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_14_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_54_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_102_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_106_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_192_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_28_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_114_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_126_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_236_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_11_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_119_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_22_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_33_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_37_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_88_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_156_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_166_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_193_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_202_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_41_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_56_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_73_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_116_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_117_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_3_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_81_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_122_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_138_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_152_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_177_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_246_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_2_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_35_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_40_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_129_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_221_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_64_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_72_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_85_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_151_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_208_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_170_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_222_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_237_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_255_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_43_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_83_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_158_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_175_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_186_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_198_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_248_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_67_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_68_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_84_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_185_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_26_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_34_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_47_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_121_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_203_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_220_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_1_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_57_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_118_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_139_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_142_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_161_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_163_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_211_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_48_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_71_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_104_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_110_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_154_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_164_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_165_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_174_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_182_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_197_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_234_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_229_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_244_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_27_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_108_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_146_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_187_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_239_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_7_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_20_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_31_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_78_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_123_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_127_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_21_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_23_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_38_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_180_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_242_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_49_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_82_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_137_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_18_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_46_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_53_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_93_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_95_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_101_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_209_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_39_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_97_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_107_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_143_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_194_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_231_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_233_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_17_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_65_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_111_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_128_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_144_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_178_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_184_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_189_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_206_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_218_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_235_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_29_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_32_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_136_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_150_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_171_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_227_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_4_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_58_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_200_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_214_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_217_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_228_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_241_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_87_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_99_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_204_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_247_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_5_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_50_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_105_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_134_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_191_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_224_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_254_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_13_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_91_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_219_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_51_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_75_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_76_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_157_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_159_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_61_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_70_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_80_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_92_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_201_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_42_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_44_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_59_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_130_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_153_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_216_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_240_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_251_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_172_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_215_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_226_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_45_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_62_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_86_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_113_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_167_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_168_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_225_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_6_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_9_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_30_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_135_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_141_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_210_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_16_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_25_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_181_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_183_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_69_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_115_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_145_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_52_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_223_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_245_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_19_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_60_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_79_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_140_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_10_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_124_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_149_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_173_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_188_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_199_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_230_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_238_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_252_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_89_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_131_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_94_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_250_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_253_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_125_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_132_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_162_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_55_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_133_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_74_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_15_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_120_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_66_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_232_sec_0": {
+    "subcube_id": 3,
+    "z_start": 0
+  },
+  "expert_90_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "expert_160_sec_0": {
+    "subcube_id": 1,
+    "z_start": 0
+  },
+  "expert_212_sec_0": {
+    "subcube_id": 2,
+    "z_start": 0
+  },
+  "shared_attention_sec_0": {
+    "subcube_id": 0,
+    "z_start": 0
+  },
+  "shared_mlp_sec_0": {
+    "subcube_id": 0,
+    "z_start": 0
+  }
+}

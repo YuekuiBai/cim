@@ -1,0 +1,24 @@
+{
+  "regions": [
+    {
+      "name": "tensor_input",
+      "start": 0,
+      "size": 64,
+      "tensor": "input"
+    },
+    {
+      "name": "tensor_output",
+      "start": 0,
+      "size": 256,
+      "tensor": "output"
+    },
+    {
+      "name": "tensor_mul_const",
+      "start": 64,
+      "size": 4,
+      "tensor": "mul_const"
+    }
+  ],
+  "total_used": 324,
+  "reuse_count": 1
+}
