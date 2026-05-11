@@ -65,3 +65,9 @@ ENV/
 # Large files
 *.mp4
 *.pptx
+# 模型权重
+*.pth
+*.pt
+*.onnx
+*.h5
+*.ckpt
