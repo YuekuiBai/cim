@@ -1,0 +1,1287 @@
+{
+  "instructions": [
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/384",
+        "/*input*/0",
+        "/*index*/0",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/1",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/2",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/2",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/4",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/3",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/8",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/4",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/16",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/5",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/32",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/6",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/64",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/7",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/128",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.sub.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "mem.copy.i32.i32",
+      "operands": [
+        "/*dst*/128",
+        "/*src*/384",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/1024",
+        "/*input*/128",
+        "/*index*/0",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/1",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/2",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/2",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/4",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/3",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/8",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/4",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/16",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/5",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/32",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/6",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/64",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/7",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/128",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/8",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/256",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/9",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/512",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/10",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/1024",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/11",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/2048",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/12",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/4096",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/13",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/8192",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/14",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/16384",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/15",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/32768",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/16",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/65536",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/17",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/131072",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/18",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/262144",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/19",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/524288",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/20",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/1048576",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/21",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/2097152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/22",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/4194304",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/23",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/8388608",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/24",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/16777216",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/25",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/33554432",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/26",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/67108864",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/27",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/134217728",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/28",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/268435456",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/29",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/536870912",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/30",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/1073741824",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i32",
+      "operands": [
+        "/*out*/896",
+        "/*input*/128",
+        "/*index*/31",
+        "/*weightPos*/[0, 0, 64, 256]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/1152",
+        "/*src1*/896",
+        "/*src2*/2147483648",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.sub.i32.vv",
+      "operands": [
+        "/*dst*/1024",
+        "/*src1*/1024",
+        "/*src2*/1152",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "mem.copy.i32.i32",
+      "operands": [
+        "/*dst*/896",
+        "/*src*/1024",
+        "/*len*/64"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vi",
+      "operands": [
+        "/*dst*/1280",
+        "/*src1*/896",
+        "/*src2*/1",
+        "/*len*/32"
+      ],
+      "comment": ""
+    }
+  ],
+  "sram_layout": {
+    "regions": [
+      {
+        "name": "input_input",
+        "start": 0,
+        "size": 128,
+        "tensor": "input"
+      },
+      {
+        "name": "output_hidden",
+        "start": 128,
+        "size": 256,
+        "tensor": "hidden"
+      },
+      {
+        "name": "acc",
+        "start": 384,
+        "size": 256,
+        "tensor": "hidden"
+      },
+      {
+        "name": "tmp",
+        "start": 640,
+        "size": 256,
+        "tensor": "hidden"
+      },
+      {
+        "name": "output_matmul_out",
+        "start": 896,
+        "size": 128,
+        "tensor": "matmul_out"
+      },
+      {
+        "name": "acc",
+        "start": 1024,
+        "size": 128,
+        "tensor": "matmul_out"
+      },
+      {
+        "name": "tmp",
+        "start": 1152,
+        "size": 128,
+        "tensor": "matmul_out"
+      },
+      {
+        "name": "ew_out_output",
+        "start": 1280,
+        "size": 128,
+        "tensor": "output"
+      }
+    ],
+    "total_used": 1408
+  },
+  "weight_mapping": {
+    "array": {
+      "row_bits": 1024,
+      "col_bits": 4096
+    },
+    "mappings": [
+      {
+        "weight": "W1",
+        "shape": [
+          128,
+          64
+        ],
+        "dtype": "i8",
+        "bit_width": 8,
+        "mapping": [
+          0,
+          0,
+          128,
+          512
+        ],
+        "row_splits": 1,
+        "col_splits": 1
+      },
+      {
+        "weight": "W2",
+        "shape": [
+          64,
+          32
+        ],
+        "dtype": "i8",
+        "bit_width": 8,
+        "mapping": [
+          0,
+          0,
+          64,
+          256
+        ],
+        "row_splits": 1,
+        "col_splits": 1
+      }
+    ]
+  }
+}

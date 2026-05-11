@@ -1,0 +1,57 @@
+{
+  "latency": {
+    "dac_latency_ns": 10.0,
+    "adc_latency_ns": 10.0,
+    "sense_latency_ns": 5.0,
+    "per_array_latency_ns": 25.000000000000004,
+    "total_latency_ns": 819200.0000000001,
+    "total_latency_ms": 0.8192,
+    "latency_per_layer_ns": 25600.000000000004
+  },
+  "energy": {
+    "static_power_per_cell_uW": 1.0,
+    "total_static_power_mW": 524.288,
+    "total_power_mW": 576.7168,
+    "energy_per_inference_uJ": 472.4464025600001
+  },
+  "area": {
+    "cell_area_um2": 10.0,
+    "array_area_mm2": 0.16383999999999999,
+    "total_area_mm2": 10.485759999999999,
+    "area_efficiency": 0.5
+  },
+  "accuracy": {
+    "estimated_snr_db": 24.436974977850646,
+    "noise_contribution": 0.01,
+    "nonlinearity_contribution": 0.05,
+    "estimated_accuracy_loss_percent": 0.6000000000000001,
+    "baseline_accuracy": 69.8,
+    "expected_accuracy": 69.2,
+    "requires_calibration": true
+  },
+  "bottlenecks": [
+    {
+      "type": "\u9635\u5217\u5229\u7528\u7387",
+      "severity": "high",
+      "description": "\u5927\u91cf\u5c0f\u9635\u5217\u5bfc\u81f4\u786c\u4ef6\u8d44\u6e90\u5229\u7528\u7387\u4f4e (32 arrays)",
+      "suggestion": "\u8003\u8651\u4f7f\u7528\u66f4\u5927\u5c3a\u5bf8\u9635\u5217\u6216\u5c42\u95f4\u590d\u7528"
+    },
+    {
+      "type": "ADC\u7cbe\u5ea6",
+      "severity": "medium",
+      "description": "ADC\u7cbe\u5ea6\u9650\u5236\u6574\u4f53\u8ba1\u7b97\u7cbe\u5ea6",
+      "suggestion": "\u63d0\u9ad8ADC\u4f4d\u6570\u6216\u91c7\u7528\u8fc7\u91c7\u6837\u6280\u672f"
+    }
+  ],
+  "ppa": {
+    "performance_tops": 52.428799999999995,
+    "power_w": 0.5767168,
+    "area_mm2": 10.485759999999999,
+    "energy_efficiency_tops_w": 90.90909090909089,
+    "area_efficiency_tops_mm2": 5.0
+  },
+  "config": {
+    "num_arrays": 32,
+    "array_size": "128x128"
+  }
+}

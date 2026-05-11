@@ -1,0 +1,35 @@
+[
+  {
+    "name": "linear_1_sec_0",
+    "shape_2d": [
+      512,
+      256
+    ],
+    "depth": 1,
+    "parent": "linear_1",
+    "section_idx": 0,
+    "params": 131072
+  },
+  {
+    "name": "linear_2_sec_0",
+    "shape_2d": [
+      256,
+      128
+    ],
+    "depth": 1,
+    "parent": "linear_2",
+    "section_idx": 0,
+    "params": 32768
+  },
+  {
+    "name": "linear_3_sec_0",
+    "shape_2d": [
+      128,
+      64
+    ],
+    "depth": 1,
+    "parent": "linear_3",
+    "section_idx": 0,
+    "params": 8192
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "name": "test_linear_mul",
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "output"
+  ],
+  "tensors": {
+    "W": {
+      "shape": [
+        64,
+        64
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "mul_const": {
+      "shape": [],
+      "dtype": "i32",
+      "addr": null
+    },
+    "input": {
+      "shape": [
+        1,
+        1,
+        64
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "matmul_out": {
+      "shape": [
+        -1,
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    },
+    "output": {
+      "shape": [
+        -1,
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    }
+  },
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "linear",
+      "inputs": [
+        "input"
+      ],
+      "outputs": [
+        "matmul_out"
+      ],
+      "attrs": {}
+    },
+    {
+      "id": "node_1",
+      "type": "elementwise",
+      "inputs": [
+        "matmul_out",
+        "mul_const"
+      ],
+      "outputs": [
+        "output"
+      ],
+      "attrs": {
+        "op": "mul",
+        "mode": "vi"
+      }
+    }
+  ]
+}

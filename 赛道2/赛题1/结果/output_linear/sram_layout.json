@@ -1,0 +1,29 @@
+{
+  "regions": [
+    {
+      "name": "input_input",
+      "start": 0,
+      "size": 128,
+      "tensor": "input"
+    },
+    {
+      "name": "output_output",
+      "start": 128,
+      "size": 512,
+      "tensor": "output"
+    },
+    {
+      "name": "acc",
+      "start": 640,
+      "size": 512,
+      "tensor": "output"
+    },
+    {
+      "name": "tmp",
+      "start": 1152,
+      "size": 512,
+      "tensor": "output"
+    }
+  ],
+  "total_used": 1664
+}

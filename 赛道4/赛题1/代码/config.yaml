@@ -1,0 +1,71 @@
+# 赛道四 赛题一 配置
+
+# 器件选型
+device:
+  name: "RRAM"
+  type: "阻变存储器"
+  array_size: "128x128"
+  bit_precision: 8
+  conductance_range: [0.00001, 0.001]  # S
+
+# 神经网络配置
+network:
+  model: "ResNet-18"
+  dataset: "CIFAR-10"
+  input_shape: [3, 32, 32]
+  num_classes: 10
+  layers:
+    - name: "conv1"
+      type: "Conv2d"
+      in_channels: 3
+      out_channels: 64
+      kernel_size: 3
+      stride: 1
+      padding: 1
+    - name: "layer1"
+      type: "BasicBlock"
+      blocks: 2
+      out_channels: 64
+    - name: "layer2"
+      type: "BasicBlock"
+      blocks: 2
+      out_channels: 128
+    - name: "layer3"
+      type: "BasicBlock"
+      blocks: 2
+      out_channels: 256
+    - name: "layer4"
+      type: "BasicBlock"
+      blocks: 2
+      out_channels: 512
+    - name: "fc"
+      type: "Linear"
+      in_features: 512
+      out_features: 10
+
+# 外围电路配置
+peripherals:
+  dac:
+    bits: 8
+    voltage_range: [0.0, 1.0]
+    settling_time: 0.00000001  # 10 ns
+  adc:
+    bits: 10
+    voltage_range: [0.0, 1.0]
+    sampling_rate: 100000000  # 100 MHz
+  sense_amplifier:
+    precision: 8
+    latency: 0.000000005  # 5 ns
+
+# 仿真参数
+simulation:
+  temperature: 300  # K
+  voltage: 0.5  # V
+  noise_std: 0.01
+  nonlinearity: 0.05
+
+# 实验配置
+experiment:
+  device: "cuda:1"
+  seed: 42
+  output_dir: "../结果"

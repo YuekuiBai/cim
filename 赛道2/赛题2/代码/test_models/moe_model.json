@@ -1,0 +1,3871 @@
+{
+  "name": "moe_256experts",
+  "is_moe": true,
+  "num_experts": 256,
+  "top_k": 8,
+  "shared_experts": [
+    0
+  ],
+  "total_params": 1107296256,
+  "operators": [
+    {
+      "name": "shared_attention",
+      "op_type": "MatMul",
+      "weight_shape": [
+        4096,
+        4096
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "expert_0",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": false,
+      "expert_id": 0,
+      "is_shared_expert": true
+    },
+    {
+      "name": "expert_1",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 1,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_2",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 2,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_3",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 3,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_4",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 4,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_5",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 5,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_6",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 6,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_7",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 7,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_8",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 8,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_9",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 9,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_10",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 10,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_11",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 11,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_12",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 12,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_13",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 13,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_14",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 14,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_15",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 15,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_16",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 16,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_17",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 17,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_18",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 18,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_19",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 19,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_20",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 20,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_21",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 21,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_22",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 22,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_23",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 23,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_24",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 24,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_25",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 25,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_26",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 26,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_27",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 27,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_28",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 28,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_29",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 29,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_30",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 30,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_31",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 31,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_32",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 32,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_33",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 33,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_34",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 34,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_35",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 35,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_36",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 36,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_37",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 37,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_38",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 38,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_39",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 39,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_40",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 40,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_41",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 41,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_42",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 42,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_43",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 43,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_44",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 44,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_45",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 45,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_46",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 46,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_47",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 47,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_48",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 48,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_49",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 49,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_50",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 50,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_51",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 51,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_52",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 52,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_53",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 53,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_54",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 54,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_55",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 55,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_56",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 56,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_57",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 57,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_58",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 58,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_59",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 59,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_60",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 60,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_61",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 61,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_62",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 62,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_63",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 63,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_64",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 64,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_65",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 65,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_66",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 66,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_67",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 67,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_68",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 68,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_69",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 69,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_70",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 70,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_71",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 71,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_72",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 72,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_73",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 73,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_74",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 74,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_75",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 75,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_76",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 76,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_77",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 77,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_78",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 78,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_79",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 79,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_80",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 80,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_81",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 81,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_82",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 82,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_83",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 83,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_84",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 84,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_85",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 85,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_86",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 86,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_87",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 87,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_88",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 88,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_89",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 89,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_90",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 90,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_91",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 91,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_92",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 92,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_93",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 93,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_94",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 94,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_95",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 95,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_96",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 96,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_97",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 97,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_98",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 98,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_99",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 99,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_100",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 100,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_101",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 101,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_102",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 102,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_103",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 103,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_104",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 104,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_105",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 105,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_106",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 106,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_107",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 107,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_108",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 108,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_109",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 109,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_110",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 110,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_111",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 111,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_112",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 112,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_113",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 113,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_114",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 114,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_115",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 115,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_116",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 116,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_117",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 117,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_118",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 118,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_119",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 119,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_120",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 120,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_121",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 121,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_122",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 122,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_123",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 123,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_124",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 124,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_125",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 125,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_126",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 126,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_127",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 127,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_128",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 128,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_129",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 129,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_130",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 130,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_131",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 131,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_132",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 132,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_133",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 133,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_134",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 134,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_135",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 135,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_136",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 136,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_137",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 137,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_138",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 138,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_139",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 139,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_140",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 140,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_141",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 141,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_142",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 142,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_143",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 143,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_144",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 144,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_145",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 145,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_146",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 146,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_147",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 147,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_148",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 148,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_149",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 149,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_150",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 150,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_151",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 151,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_152",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 152,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_153",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 153,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_154",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 154,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_155",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 155,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_156",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 156,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_157",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 157,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_158",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 158,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_159",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 159,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_160",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 160,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_161",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 161,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_162",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 162,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_163",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 163,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_164",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 164,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_165",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 165,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_166",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 166,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_167",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 167,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_168",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 168,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_169",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 169,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_170",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 170,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_171",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 171,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_172",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 172,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_173",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 173,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_174",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 174,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_175",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 175,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_176",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 176,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_177",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 177,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_178",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 178,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_179",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 179,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_180",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 180,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_181",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 181,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_182",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 182,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_183",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 183,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_184",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 184,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_185",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 185,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_186",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 186,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_187",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 187,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_188",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 188,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_189",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 189,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_190",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 190,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_191",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 191,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_192",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 192,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_193",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 193,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_194",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 194,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_195",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 195,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_196",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 196,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_197",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 197,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_198",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 198,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_199",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 199,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_200",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 200,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_201",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 201,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_202",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 202,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_203",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 203,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_204",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 204,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_205",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 205,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_206",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 206,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_207",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 207,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_208",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 208,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_209",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 209,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_210",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 210,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_211",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 211,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_212",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 212,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_213",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 213,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_214",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 214,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_215",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 215,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_216",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 216,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_217",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 217,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_218",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 218,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_219",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 219,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_220",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 220,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_221",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 221,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_222",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 222,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_223",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 223,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_224",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 224,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_225",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 225,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_226",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 226,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_227",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 227,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_228",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 228,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_229",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 229,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_230",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 230,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_231",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 231,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_232",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 232,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_233",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 233,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_234",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 234,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_235",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 235,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_236",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 236,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_237",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 237,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_238",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 238,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_239",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 239,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_240",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 240,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_241",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 241,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_242",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 242,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_243",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 243,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_244",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 244,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_245",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 245,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_246",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 246,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_247",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 247,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_248",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 248,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_249",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 249,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_250",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 250,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_251",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 251,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_252",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 252,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_253",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 253,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_254",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 254,
+      "is_shared_expert": false
+    },
+    {
+      "name": "expert_255",
+      "op_type": "MoE",
+      "weight_shape": [
+        4096,
+        1024
+      ],
+      "dependencies": [
+        "shared_attention"
+      ],
+      "is_sparse": true,
+      "expert_id": 255,
+      "is_shared_expert": false
+    },
+    {
+      "name": "shared_mlp",
+      "op_type": "MatMul",
+      "weight_shape": [
+        4096,
+        4096
+      ],
+      "dependencies": [
+        "expert_0",
+        "expert_1",
+        "expert_2",
+        "expert_3",
+        "expert_4",
+        "expert_5",
+        "expert_6",
+        "expert_7",
+        "expert_8",
+        "expert_9",
+        "expert_10",
+        "expert_11",
+        "expert_12",
+        "expert_13",
+        "expert_14",
+        "expert_15",
+        "expert_16",
+        "expert_17",
+        "expert_18",
+        "expert_19",
+        "expert_20",
+        "expert_21",
+        "expert_22",
+        "expert_23",
+        "expert_24",
+        "expert_25",
+        "expert_26",
+        "expert_27",
+        "expert_28",
+        "expert_29",
+        "expert_30",
+        "expert_31",
+        "expert_32",
+        "expert_33",
+        "expert_34",
+        "expert_35",
+        "expert_36",
+        "expert_37",
+        "expert_38",
+        "expert_39",
+        "expert_40",
+        "expert_41",
+        "expert_42",
+        "expert_43",
+        "expert_44",
+        "expert_45",
+        "expert_46",
+        "expert_47",
+        "expert_48",
+        "expert_49",
+        "expert_50",
+        "expert_51",
+        "expert_52",
+        "expert_53",
+        "expert_54",
+        "expert_55",
+        "expert_56",
+        "expert_57",
+        "expert_58",
+        "expert_59",
+        "expert_60",
+        "expert_61",
+        "expert_62",
+        "expert_63",
+        "expert_64",
+        "expert_65",
+        "expert_66",
+        "expert_67",
+        "expert_68",
+        "expert_69",
+        "expert_70",
+        "expert_71",
+        "expert_72",
+        "expert_73",
+        "expert_74",
+        "expert_75",
+        "expert_76",
+        "expert_77",
+        "expert_78",
+        "expert_79",
+        "expert_80",
+        "expert_81",
+        "expert_82",
+        "expert_83",
+        "expert_84",
+        "expert_85",
+        "expert_86",
+        "expert_87",
+        "expert_88",
+        "expert_89",
+        "expert_90",
+        "expert_91",
+        "expert_92",
+        "expert_93",
+        "expert_94",
+        "expert_95",
+        "expert_96",
+        "expert_97",
+        "expert_98",
+        "expert_99",
+        "expert_100",
+        "expert_101",
+        "expert_102",
+        "expert_103",
+        "expert_104",
+        "expert_105",
+        "expert_106",
+        "expert_107",
+        "expert_108",
+        "expert_109",
+        "expert_110",
+        "expert_111",
+        "expert_112",
+        "expert_113",
+        "expert_114",
+        "expert_115",
+        "expert_116",
+        "expert_117",
+        "expert_118",
+        "expert_119",
+        "expert_120",
+        "expert_121",
+        "expert_122",
+        "expert_123",
+        "expert_124",
+        "expert_125",
+        "expert_126",
+        "expert_127",
+        "expert_128",
+        "expert_129",
+        "expert_130",
+        "expert_131",
+        "expert_132",
+        "expert_133",
+        "expert_134",
+        "expert_135",
+        "expert_136",
+        "expert_137",
+        "expert_138",
+        "expert_139",
+        "expert_140",
+        "expert_141",
+        "expert_142",
+        "expert_143",
+        "expert_144",
+        "expert_145",
+        "expert_146",
+        "expert_147",
+        "expert_148",
+        "expert_149",
+        "expert_150",
+        "expert_151",
+        "expert_152",
+        "expert_153",
+        "expert_154",
+        "expert_155",
+        "expert_156",
+        "expert_157",
+        "expert_158",
+        "expert_159",
+        "expert_160",
+        "expert_161",
+        "expert_162",
+        "expert_163",
+        "expert_164",
+        "expert_165",
+        "expert_166",
+        "expert_167",
+        "expert_168",
+        "expert_169",
+        "expert_170",
+        "expert_171",
+        "expert_172",
+        "expert_173",
+        "expert_174",
+        "expert_175",
+        "expert_176",
+        "expert_177",
+        "expert_178",
+        "expert_179",
+        "expert_180",
+        "expert_181",
+        "expert_182",
+        "expert_183",
+        "expert_184",
+        "expert_185",
+        "expert_186",
+        "expert_187",
+        "expert_188",
+        "expert_189",
+        "expert_190",
+        "expert_191",
+        "expert_192",
+        "expert_193",
+        "expert_194",
+        "expert_195",
+        "expert_196",
+        "expert_197",
+        "expert_198",
+        "expert_199",
+        "expert_200",
+        "expert_201",
+        "expert_202",
+        "expert_203",
+        "expert_204",
+        "expert_205",
+        "expert_206",
+        "expert_207",
+        "expert_208",
+        "expert_209",
+        "expert_210",
+        "expert_211",
+        "expert_212",
+        "expert_213",
+        "expert_214",
+        "expert_215",
+        "expert_216",
+        "expert_217",
+        "expert_218",
+        "expert_219",
+        "expert_220",
+        "expert_221",
+        "expert_222",
+        "expert_223",
+        "expert_224",
+        "expert_225",
+        "expert_226",
+        "expert_227",
+        "expert_228",
+        "expert_229",
+        "expert_230",
+        "expert_231",
+        "expert_232",
+        "expert_233",
+        "expert_234",
+        "expert_235",
+        "expert_236",
+        "expert_237",
+        "expert_238",
+        "expert_239",
+        "expert_240",
+        "expert_241",
+        "expert_242",
+        "expert_243",
+        "expert_244",
+        "expert_245",
+        "expert_246",
+        "expert_247",
+        "expert_248",
+        "expert_249",
+        "expert_250",
+        "expert_251",
+        "expert_252",
+        "expert_253",
+        "expert_254",
+        "expert_255"
+      ]
+    }
+  ]
+}

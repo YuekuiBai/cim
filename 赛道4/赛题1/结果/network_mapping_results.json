@@ -1,0 +1,61 @@
+{
+  "total_arrays": 2,
+  "total_bandwidth": 1613824,
+  "layer_mappings": [
+    {
+      "layer_type": "Conv2d",
+      "weight_shape": [
+        64,
+        3,
+        3,
+        3
+      ],
+      "total_weights": 1728,
+      "stride": 1,
+      "arrays_needed": 1,
+      "utilization": 0.10546874999999936
+    },
+    {
+      "layer_type": "Linear",
+      "weight_shape": [
+        10,
+        512
+      ],
+      "total_weights": 5120,
+      "arrays_needed": 1,
+      "utilization": 0.3124999999999981
+    }
+  ],
+  "data_paths": [
+    {
+      "type": "Conv2d",
+      "input_dac_channels": 3,
+      "output_adc_channels": 64,
+      "input_precision": 8,
+      "output_precision": 10,
+      "feature_map_size": [
+        32,
+        32
+      ],
+      "word_length": 1024,
+      "bandwidth_requirement": 1572864,
+      "latency_per_layer": 6.656e-05
+    },
+    {
+      "type": "Linear",
+      "input_dac_channels": 1,
+      "output_adc_channels": 10,
+      "input_precision": 8,
+      "output_precision": 10,
+      "word_length": 512,
+      "bandwidth_requirement": 40960,
+      "latency_per_layer": 3.328e-05
+    }
+  ],
+  "communication_overhead": {
+    "total_bandwidth_bits_per_inference": 1613824,
+    "inter_array_bandwidth": 161382.40000000002,
+    "memory_access_reduction_factor": 100,
+    "total_latency_per_inference": 9.983999999999999e-05
+  }
+}

@@ -1,0 +1,68 @@
+device:
+  name: "FeFET"
+  type: "铁电场效应晶体管"
+  array_size: "128x128"
+  bit_precision: 6
+  vt_range: [0.3, 1.2]
+  vdd: 1.8
+
+physics:
+  oxide_thickness: 1.0e-8
+  permittivity: 3.9
+  electron_mobility: 140.0
+  channel_length: 2.8e-8
+  channel_width: 1.0e-7
+  ferroelectric_thickness: 2.0e-8
+
+work_region:
+  subthreshold_swing: 0.06
+  vgs_range: [0.0, 1.8]
+  vds_range: [0.0, 1.8]
+  linear_region_max: 0.5
+  saturation_region_min: 1.0
+  vt_range: [0.3, 1.2]
+
+multi_bit:
+  weight_bits: 6
+  input_bits: 4
+  output_bits: 8
+  quantization_levels: 64
+
+sign_handling:
+  method: "differential_pair"
+  reference_voltage: 0.9
+  common_mode_voltage: 0.9
+
+compensation:
+  method: "pre_distortion"
+  look_up_table_size: 256
+  calibration_interval: 1000
+
+non_ideal:
+  mismatch_factor: 0.05
+  temperature_range: [250, 400]
+  noise_std: 0.001
+  drift_coefficient: 0.001
+
+peripherals:
+  dac:
+    bits: 6
+    voltage_range: [0.0, 1.8]
+    settling_time: 1.0e-8
+  adc:
+    bits: 10
+    voltage_range: [0.0, 1.8]
+    sampling_rate: 100000000.0
+  sense_amplifier:
+    precision: 8
+    latency: 5.0e-9
+
+simulation:
+  temperature: 300
+  voltage: 0.9
+  iterations: 1000
+
+experiment:
+  device: "cuda:1"
+  seed: 42
+  output_dir: "../结果"

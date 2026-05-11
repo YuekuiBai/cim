@@ -1,0 +1,56 @@
+{
+  "name": "test_linear_bias",
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "output"
+  ],
+  "tensors": {
+    "W": {
+      "shape": [
+        128,
+        64
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "bias": {
+      "shape": [
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    },
+    "input": {
+      "shape": [
+        1,
+        1,
+        128
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "output": {
+      "shape": [
+        -1,
+        64
+      ],
+      "dtype": "i32",
+      "addr": null
+    }
+  },
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "linear",
+      "inputs": [
+        "input"
+      ],
+      "outputs": [
+        "output"
+      ],
+      "attrs": {}
+    }
+  ]
+}

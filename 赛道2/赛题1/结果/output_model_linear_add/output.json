@@ -1,0 +1,303 @@
+{
+  "instructions": [
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/384",
+        "/*input*/0",
+        "/*index*/0",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/1",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/2",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/2",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/4",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/3",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/8",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/4",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/16",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/5",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/32",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/6",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/64",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "cim.bit.i8",
+      "operands": [
+        "/*out*/128",
+        "/*input*/0",
+        "/*index*/7",
+        "/*weightPos*/[0, 0, 128, 512]"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.mul.i32.vi",
+      "operands": [
+        "/*dst*/640",
+        "/*src1*/128",
+        "/*src2*/128",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.sub.i32.vv",
+      "operands": [
+        "/*dst*/384",
+        "/*src1*/384",
+        "/*src2*/640",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "mem.copy.i32.i32",
+      "operands": [
+        "/*dst*/128",
+        "/*src*/384",
+        "/*len*/128"
+      ],
+      "comment": ""
+    },
+    {
+      "opcode": "elt.add.i32.vi",
+      "operands": [
+        "/*dst*/896",
+        "/*src1*/128",
+        "/*src2*/1",
+        "/*len*/64"
+      ],
+      "comment": ""
+    }
+  ],
+  "sram_layout": {
+    "regions": [
+      {
+        "name": "input_input",
+        "start": 0,
+        "size": 128,
+        "tensor": "input"
+      },
+      {
+        "name": "output_matmul_out",
+        "start": 128,
+        "size": 256,
+        "tensor": "matmul_out"
+      },
+      {
+        "name": "acc",
+        "start": 384,
+        "size": 256,
+        "tensor": "matmul_out"
+      },
+      {
+        "name": "tmp",
+        "start": 640,
+        "size": 256,
+        "tensor": "matmul_out"
+      },
+      {
+        "name": "ew_out_output",
+        "start": 896,
+        "size": 256,
+        "tensor": "output"
+      }
+    ],
+    "total_used": 1152
+  },
+  "weight_mapping": {
+    "array": {
+      "row_bits": 1024,
+      "col_bits": 4096
+    },
+    "mappings": [
+      {
+        "weight": "W",
+        "shape": [
+          128,
+          64
+        ],
+        "dtype": "i8",
+        "bit_width": 8,
+        "mapping": [
+          0,
+          0,
+          128,
+          512
+        ],
+        "row_splits": 1,
+        "col_splits": 1
+      }
+    ]
+  }
+}

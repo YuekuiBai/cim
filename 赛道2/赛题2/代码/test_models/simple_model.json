@@ -1,0 +1,38 @@
+{
+  "name": "simple_3layer",
+  "is_moe": false,
+  "total_params": 172032,
+  "operators": [
+    {
+      "name": "linear_1",
+      "op_type": "MatMul",
+      "weight_shape": [
+        512,
+        256
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "linear_2",
+      "op_type": "MatMul",
+      "weight_shape": [
+        256,
+        128
+      ],
+      "dependencies": [
+        "linear_1"
+      ]
+    },
+    {
+      "name": "linear_3",
+      "op_type": "MatMul",
+      "weight_shape": [
+        128,
+        64
+      ],
+      "dependencies": [
+        "linear_2"
+      ]
+    }
+  ]
+}

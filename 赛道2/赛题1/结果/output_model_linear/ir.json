@@ -1,0 +1,49 @@
+{
+  "name": "test_linear",
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "output"
+  ],
+  "tensors": {
+    "weight_B": {
+      "shape": [
+        128,
+        128
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "input": {
+      "shape": [
+        1,
+        1,
+        128
+      ],
+      "dtype": "i8",
+      "addr": null
+    },
+    "output": {
+      "shape": [
+        -1,
+        128
+      ],
+      "dtype": "i32",
+      "addr": null
+    }
+  },
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "linear",
+      "inputs": [
+        "input"
+      ],
+      "outputs": [
+        "output"
+      ],
+      "attrs": {}
+    }
+  ]
+}

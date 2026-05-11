@@ -1,0 +1,35 @@
+{
+  "regions": [
+    {
+      "name": "input_input",
+      "start": 0,
+      "size": 128,
+      "tensor": "input"
+    },
+    {
+      "name": "output_output",
+      "start": 128,
+      "size": 256,
+      "tensor": "output"
+    },
+    {
+      "name": "acc",
+      "start": 384,
+      "size": 256,
+      "tensor": "output"
+    },
+    {
+      "name": "tmp",
+      "start": 640,
+      "size": 256,
+      "tensor": "output"
+    },
+    {
+      "name": "bias_bias",
+      "start": 896,
+      "size": 256,
+      "tensor": "bias"
+    }
+  ],
+  "total_used": 1152
+}

@@ -1,0 +1,17 @@
+{
+  "weight_shape": [
+    128,
+    128
+  ],
+  "input_shape": [
+    128
+  ],
+  "output_shape": [
+    128
+  ],
+  "max_current": 0.05075459808148865,
+  "min_current": 0.001938647924986471,
+  "avg_power": 1.550150282841186,
+  "array_efficiency": 9.461366472419348e-05,
+  "snr": 7.092605907980736
+}

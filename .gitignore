@@ -61,3 +61,7 @@ ENV/
 *.tmp
 *.bak
 *.cache
+
+# Large files
+*.mp4
+*.pptx

@@ -1,0 +1,35 @@
+{
+  "regions": [
+    {
+      "name": "input_input",
+      "start": 0,
+      "size": 64,
+      "tensor": "input"
+    },
+    {
+      "name": "output_matmul_out",
+      "start": 64,
+      "size": 256,
+      "tensor": "matmul_out"
+    },
+    {
+      "name": "acc",
+      "start": 320,
+      "size": 256,
+      "tensor": "matmul_out"
+    },
+    {
+      "name": "tmp",
+      "start": 576,
+      "size": 256,
+      "tensor": "matmul_out"
+    },
+    {
+      "name": "ew_out_output",
+      "start": 832,
+      "size": 256,
+      "tensor": "output"
+    }
+  ],
+  "total_used": 1088
+}
