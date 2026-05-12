@@ -47,8 +47,16 @@ def _get_cjk_font():
 
 def _setup_chinese_font():
     """Setup matplotlib for Chinese font support"""
-    plt.rcParams['font.sans-serif'] = ['Droid Sans Fallback', 'WenQuanYi Micro Hei',
-                                        'Noto Sans CJK SC', 'SimHei', 'DejaVu Sans']
+    noto_path = '/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc'
+    if os.path.exists(noto_path):
+        matplotlib.font_manager.fontManager.addfont(noto_path)
+        prop = matplotlib.font_manager.FontProperties(fname=noto_path)
+        font_name = prop.get_name()
+        plt.rcParams['font.family'] = font_name
+        plt.rcParams['font.sans-serif'] = [font_name]
+    else:
+        plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC', 'WenQuanYi Micro Hei',
+                                            'SimHei', 'DejaVu Sans']
     plt.rcParams['axes.unicode_minus'] = False
     plt.rcParams['figure.dpi'] = 150
     plt.rcParams['savefig.dpi'] = 150
@@ -318,42 +326,37 @@ def plot_accuracy_analysis(results, output_dir: str):
     if 'performance_evaluation_results' not in results:
         return
 
-    import warnings
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
+    _setup_chinese_font()
+    accuracy = results['performance_evaluation_results']['accuracy']
 
-        _setup_chinese_font()
-        accuracy = results['performance_evaluation_results']['accuracy']
+    fig, ax = plt.subplots(figsize=(8, 6))
 
-        fig, ax = plt.subplots(figsize=(8, 6))
-        fig.suptitle('精度影响分析', fontsize=16, fontweight='bold', y=1.02)
+    categories = ['基准精度', '期望精度']
+    values = [
+        accuracy['baseline_accuracy'],
+        accuracy['expected_accuracy']
+    ]
+    colors = ['#3498db', '#2ecc71']
 
-        categories = ['基准精度', '精度损失', '期望精度']
-        values = [
-            accuracy['baseline_accuracy'],
-            -accuracy['estimated_accuracy_loss_percent'],
-            accuracy['expected_accuracy']
-        ]
-        colors = ['#3498db', '#e74c3c', '#2ecc71']
+    bars = ax.bar(categories, values, color=colors, alpha=0.8, edgecolor='black', linewidth=1.5, width=0.5)
+    ax.set_ylabel('Top-1 精度 (%)', fontsize=12)
+    ax.set_title('CIM 系统精度分析', fontsize=14)
+    ax.set_ylim([65, 72])
 
-        bars = ax.bar(categories, values, color=colors, alpha=0.8, edgecolor='black', linewidth=1.5)
-        ax.set_ylabel('Top-1 精度 (%)', fontsize=12)
-        ax.set_title('CIM 系统精度分析', fontsize=14)
-        ax.set_ylim([60, 75])
+    for bar, val in zip(bars, values):
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height + 0.05, f'{val:.1f}%',
+               ha='center', va='bottom', fontsize=13, fontweight='bold')
 
-        for bar, val in zip(bars, values):
-            height = bar.get_height()
-            if val < 0:
-                ax.text(bar.get_x() + bar.get_width()/2., height / 2, f'{val:.1f}%',
-                       ha='center', va='center', fontsize=12, fontweight='bold', color='white')
-            else:
-                ax.text(bar.get_x() + bar.get_width()/2., height * 1.01, f'{val:.1f}%',
-                       ha='center', va='bottom', fontsize=12, fontweight='bold')
+    loss = accuracy['estimated_accuracy_loss_percent']
+    ax.text(0.5, 68.5, f'精度损失: -{loss:.1f}%', ha='center', va='center',
+           fontsize=14, fontweight='bold', color='#e74c3c',
+           bbox=dict(boxstyle='round,pad=0.5', facecolor='#ffeaea', edgecolor='#e74c3c', alpha=0.8))
 
-        plt.tight_layout()
-        plt.savefig(os.path.join(output_dir, 'accuracy_analysis.png'), dpi=150, bbox_inches='tight')
-        plt.close()
-        print(f"Saved: {os.path.join(output_dir, 'accuracy_analysis.png')}")
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, 'accuracy_analysis.png'), dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"Saved: {os.path.join(output_dir, 'accuracy_analysis.png')}")
 
 def generate_all_charts(output_dir: str):
     print("=" * 60)
