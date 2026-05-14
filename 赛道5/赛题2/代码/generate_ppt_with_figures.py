@@ -8,7 +8,7 @@ from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN
 import os
 
-FIGURES_DIR = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/results/figures"
+FIGURES_DIR = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/图表"
 
 def add_title_slide(prs, title_text, subtitle_text=None):
     """添加标题幻灯片"""
@@ -172,7 +172,7 @@ def create_ppt():
 
     # ========== 第4页：框架架构图 ==========
     add_image_slide(prs, "STE噪声感知训练框架架构",
-        f"{FIGURES_DIR}/framework_architecture.png",
+        f"{FIGURES_DIR}/图1_框架架构图.png",
         "图1：STE噪声感知训练框架整体架构")
 
     # ========== 第5页：问题分析 ==========
@@ -185,7 +185,7 @@ def create_ppt():
 
     # ========== 第6页：自适应调度对比 ==========
     add_image_slide(prs, "自适应STE调度策略对比",
-        f"{FIGURES_DIR}/schedule_comparison.png",
+        f"{FIGURES_DIR}/图3_调度策略对比.png",
         "图2：四种调度策略的缩放因子随噪声水平的变化曲线，Sqrt调度与理论最优最吻合")
 
     # ========== 第7页：创新算法（一） ==========
@@ -213,32 +213,32 @@ def create_ppt():
 
     # ========== 第10页：创新算法对比图 ==========
     add_image_slide(prs, "创新算法性能对比",
-        f"{FIGURES_DIR}/innovation_comparison.png",
+        f"{FIGURES_DIR}/图4_创新算法对比.png",
         "图3：各创新算法在CIFAR-10上的精度对比，Adaptive-STE-Sqrt达到最高85.30%")
 
     # ========== 第11页：训练曲线 ==========
     add_image_slide(prs, "训练过程曲线",
-        f"{FIGURES_DIR}/training_curves.png",
+        f"{FIGURES_DIR}/图2_训练曲线.png",
         "图4：各方法的训练损失和精度随epoch的变化曲线")
 
     # ========== 第12页：消融实验 ==========
     add_image_slide(prs, "消融实验分析",
-        f"{FIGURES_DIR}/ablation_study.png",
+        f"{FIGURES_DIR}/图10_消融实验.png",
         "图5：各组件的独立贡献，Layerwise和Sqrt调度是关键改进")
 
     # ========== 第13页：噪声鲁棒性 ==========
     add_image_slide(prs, "噪声鲁棒性分析",
-        f"{FIGURES_DIR}/noise_robustness.png",
+        f"{FIGURES_DIR}/图8_噪声鲁棒性.png",
         "图6：噪声训练与干净训练的对比，以及不同方法的抗噪能力")
 
     # ========== 第14页：敏感性分析 ==========
     add_image_slide(prs, "噪声敏感性分析",
-        f"{FIGURES_DIR}/sensitivity_analysis.png",
+        f"{FIGURES_DIR}/图7_敏感性分析.png",
         "图7：基准模型与STE-NAT在不同噪声水平下的性能变化")
 
     # ========== 第15页：统计显著性 ==========
     add_image_slide(prs, "统计显著性分析",
-        f"{FIGURES_DIR}/statistical_analysis.png",
+        f"{FIGURES_DIR}/图12_统计分析.png",
         "图8：箱线图显示方法稳定性，t检验验证显著性差异(p<0.05)")
 
     # ========== 第16页：创新点总结 ==========

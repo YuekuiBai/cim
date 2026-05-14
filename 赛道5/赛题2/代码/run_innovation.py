@@ -411,7 +411,7 @@ def main():
                         default='/mnt/storage2/zyc/CIM比赛/公共数据集',
                         help='数据集目录')
     parser.add_argument('--save_dir', type=str,
-                        default='/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/代码/results/innovation',
+                        default='/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/结果/innovation',
                         help='结果保存目录')
     args = parser.parse_args()
 

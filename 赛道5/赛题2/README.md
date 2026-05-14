@@ -34,6 +34,7 @@
 ├── 文档/                     # 项目文档
 │   ├── 实验报告.md           # 完整实验报告
 │   ├── 算法设计文档.md       # STE算法设计
+│   ├── 专利技术交底书.md     # 3篇发明专利（自适应STE/层次化噪声注入/偏差校正正则化）
 │   ├── 噪声模型文档.md       # 噪声模型说明
 │   ├── 创新点总结.md         # 创新方法总结
 │   ├── 创新理论证明.md       # 理论证明
@@ -43,12 +44,12 @@
 │   └── 算法演示视频.md       # 视频脚本
 ├── 结果/                     # 实验结果
 │   ├── figures/              # 可视化图表
-│   │   ├── framework_architecture.png
-│   │   ├── training_curves.png
-│   │   ├── robustness_comparison.png
-│   │   ├── statistical_analysis.png
-│   │   ├── ablation_study.png
-│   │   └── innovation_comparison.png
+│   │   ├── 图1_框架架构图.png
+│   │   ├── 图2_训练曲线.png
+│   │   ├── 图9_鲁棒性对比.png
+│   │   ├── 图12_统计分析.png
+│   │   ├── 图10_消融实验.png
+│   │   └── 图4_创新算法对比.png
 │   ├── task1_ste_design/     # 任务一结果
 │   ├── task2_ste_nat/        # 任务二结果
 │   ├── task2_validation/     # 任务二验证
@@ -132,12 +133,12 @@ CIFAR-10数据集位于：`/mnt/storage2/zyc/CIM比赛/公共数据集/cifar-10-
 
 ## 图表说明
 
-- `framework_architecture.png`: STE框架架构图
-- `training_curves.png`: 训练曲线
-- `robustness_comparison.png`: 鲁棒性对比
-- `statistical_analysis.png`: 统计分析结果
-- `ablation_study.png`: 消融实验
-- `innovation_comparison.png`: 创新方法对比
+- `图1_框架架构图.png`: STE框架架构图
+- `图2_训练曲线.png`: 训练曲线
+- `图9_鲁棒性对比.png`: 鲁棒性对比
+- `图12_统计分析.png`: 统计分析结果
+- `图10_消融实验.png`: 消融实验
+- `图4_创新算法对比.png`: 创新方法对比
 
 ## 评分要点
 

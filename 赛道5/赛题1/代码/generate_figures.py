@@ -7,7 +7,7 @@ plt.rcParams['axes.unicode_minus'] = False
 import numpy as np
 import os
 
-os.makedirs('./results/figures', exist_ok=True)
+os.makedirs('../图表', exist_ok=True)
 
 alphas = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
 
@@ -90,8 +90,8 @@ ax4_twin.set_ylim(35, 60)
 ax4.grid(True, alpha=0.3)
 
 plt.tight_layout()
-plt.savefig('./results/figures/experiment_overview.png', dpi=150, bbox_inches='tight')
-print("保存: results/figures/experiment_overview.png")
+plt.savefig('../图表/图1_实验总览.png', dpi=150, bbox_inches='tight')
+print("保存: ../图表/图1_实验总览.png")
 
 quant_acc = {
     'FP32': [57.11, 54.13, 51.36, 48.60, 45.81, 42.76],
@@ -124,8 +124,8 @@ ax.text(0.02, 0.02, summary, transform=ax.transAxes, fontsize=10, verticalalignm
         bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.5))
 
 plt.tight_layout()
-plt.savefig('./results/figures/quantization_vs_nonlinear.png', dpi=150, bbox_inches='tight')
-print("保存: results/figures/quantization_vs_nonlinear.png")
+plt.savefig('../图表/图2_量化与非线性分析.png', dpi=150, bbox_inches='tight')
+print("保存: ../图表/图2_量化与非线性分析.png")
 
 fig3, axes = plt.subplots(1, 3, figsize=(15, 5))
 
@@ -166,8 +166,8 @@ axes[2].legend([plt.Rectangle((0,0),1,1,fc='#1f77b4'), plt.Rectangle((0,0),1,1,f
                ['Nonlinear', 'Gaussian'], loc='upper left')
 
 plt.tight_layout()
-plt.savefig('./results/figures/summary_comparison.png', dpi=150, bbox_inches='tight')
-print("保存: results/figures/summary_comparison.png")
+plt.savefig('../图表/图3_方法对比汇总.png', dpi=150, bbox_inches='tight')
+print("保存: ../图表/图3_方法对比汇总.png")
 
 print("\n" + "="*60)
 print("所有图表生成完成！")

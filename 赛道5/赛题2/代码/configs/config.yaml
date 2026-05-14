@@ -51,6 +51,6 @@ dataset:
   num_workers: 4
 
 output:
-  save_dir: results
+  save_dir: ../结果
   save_plots: true
   save_models: true

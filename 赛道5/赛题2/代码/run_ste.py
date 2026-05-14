@@ -373,7 +373,7 @@ def main():
                        choices=['all', 'task1', 'task2', 'task3'],
                        help='要运行的任务')
     parser.add_argument('--device', type=str, default='cuda:1', help='设备')
-    parser.add_argument('--save_dir', type=str, default='results', help='结果保存目录')
+    parser.add_argument('--save_dir', type=str, default='../结果', help='结果保存目录')
     args = parser.parse_args()
 
     config = load_config(args.config)

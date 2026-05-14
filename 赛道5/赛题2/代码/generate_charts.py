@@ -15,12 +15,12 @@ plt.rcParams['font.size'] = 11
 plt.rcParams['axes.titlesize'] = 13
 plt.rcParams['axes.labelsize'] = 11
 
-OUTPUT_DIR = "/mnt/storage2/zyc/CIM 比赛/赛道 5/赛题 2/results/figures"
+OUTPUT_DIR = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/图表"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def load_results():
     """加载所有实验结果"""
-    base = "/mnt/storage2/zyc/CIM 比赛/赛道 5/赛题 2/results"
+    base = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/结果"
     results = {}
     
     # 加载创新算法结果 (使用 innovation_gpu1)
@@ -65,9 +65,9 @@ def plot_innovation_comparison(results):
     ax.grid(axis='x', alpha=0.2)
     
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/innovation_comparison.png", dpi=200, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图4_创新算法对比.png", dpi=200, bbox_inches='tight')
     plt.close()
-    print(f"已保存：{OUTPUT_DIR}/innovation_comparison.png (数据：{len(data)} 个方法)")
+    print(f"已保存：{OUTPUT_DIR}/图4_创新算法对比.png (数据：{len(data)} 个方法)")
 
 def plot_ablation_study(results):
     """绘制消融实验图"""
@@ -104,9 +104,9 @@ def plot_ablation_study(results):
     ax.tick_params(axis='x', labelsize=9)
     
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/ablation_study.png", dpi=200, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图10_消融实验.png", dpi=200, bbox_inches='tight')
     plt.close()
-    print(f"已保存：{OUTPUT_DIR}/ablation_study.png")
+    print(f"已保存：{OUTPUT_DIR}/图10_消融实验.png")
 
 def plot_training_curves(results):
     """绘制训练曲线"""
@@ -146,9 +146,9 @@ def plot_training_curves(results):
     axes[1].grid(True, alpha=0.2)
     
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/training_curves.png", dpi=200, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图2_训练曲线.png", dpi=200, bbox_inches='tight')
     plt.close()
-    print(f"已保存：{OUTPUT_DIR}/training_curves.png")
+    print(f"已保存：{OUTPUT_DIR}/图2_训练曲线.png")
 
 def plot_schedule_comparison():
     """绘制调度策略对比图（理论曲线）"""
@@ -176,9 +176,9 @@ def plot_schedule_comparison():
     ax.set_ylim(0, 1.05)
     
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/schedule_comparison.png", dpi=200, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图3_调度策略对比.png", dpi=200, bbox_inches='tight')
     plt.close()
-    print(f"已保存：{OUTPUT_DIR}/schedule_comparison.png")
+    print(f"已保存：{OUTPUT_DIR}/图3_调度策略对比.png")
 
 def plot_framework_architecture():
     """绘制框架架构图（示意图）"""
@@ -206,9 +206,9 @@ def plot_framework_architecture():
                transform=ax.transAxes, fontweight='bold', color='white')
     
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/framework_architecture.png", dpi=200, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图1_框架架构图.png", dpi=200, bbox_inches='tight')
     plt.close()
-    print(f"已保存：{OUTPUT_DIR}/framework_architecture.png")
+    print(f"已保存：{OUTPUT_DIR}/图1_框架架构图.png")
 
 if __name__ == "__main__":
     print("开始生成赛题二图表...")

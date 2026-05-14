@@ -157,27 +157,40 @@ def plot_instruction_counts():
 
 
 def plot_sram_usage():
-    """Figure 2: SRAM usage comparison"""
+    """Figure 2: SRAM usage comparison with zoomed inset"""
     fig, ax = plt.subplots(figsize=(12, 6))
 
-    sram_usage = []
+    sram_usage_bytes = []
     for m in MODELS:
         data = load_model_data(m)
         sram = data.get('sram', {})
         total = sram.get('total_used', 0)
-        sram_usage.append(total)
+        sram_usage_bytes.append(total)
+
+    # Convert to KB for better visualization
+    sram_usage_kb = [v / 1024 for v in sram_usage_bytes]
+    SRAM_LIMIT_KB = 512
 
     colors = ['#1565C0', '#2E7D32', '#E65100', '#C62828', '#6A1B9A', '#00838F', '#4E342E']
-    bars = ax.bar(MODEL_LABELS, sram_usage, color=colors, edgecolor='white', linewidth=0.8, width=0.7)
+    bars = ax.bar(MODEL_LABELS, sram_usage_kb, color=colors, edgecolor='white', linewidth=0.8, width=0.7)
 
-    for bar, val in zip(bars, sram_usage):
-        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 200,
-                f'{val} B', ha='center', va='bottom', fontsize=10, fontweight='bold')
+    # Set y-axis to zoom in on actual usage range
+    max_usage = max(sram_usage_kb)
+    ax.set_ylim(0, max_usage * 1.4)
 
-    ax.axhline(y=512 * 1024, color='#C62828', linestyle='--', alpha=0.6, linewidth=1.5, label='SRAM 上限 (512KB)')
-    ax.set_ylabel('SRAM 使用量 (Bytes)', fontsize=13, fontweight='bold')
+    for bar, val_bytes in zip(bars, sram_usage_bytes):
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.02,
+                f'{val_bytes} B', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+    # Add text box for SRAM limit in the upper right corner (outside data range)
+    limit_text = f'SRAM 上限: {SRAM_LIMIT_KB} KB\n(实际使用量远小于上限)'
+    ax.text(0.98, 0.95, limit_text, transform=ax.transAxes,
+            fontsize=10, fontweight='bold', color='#C62828',
+            ha='right', va='top',
+            bbox=dict(boxstyle='round,pad=0.4', facecolor='#FFF3E0', edgecolor='#C62828', alpha=0.9))
+
+    ax.set_ylabel('SRAM 使用量 (KB)', fontsize=13, fontweight='bold')
     ax.set_title('赛题一：各模型 SRAM 使用量对比', fontsize=15, fontweight='bold', pad=15)
-    ax.legend(fontsize=10, frameon=True, edgecolor='#CCCCCC')
     ax.set_xticklabels(MODEL_LABELS, rotation=25, ha='right', fontsize=10)
     ax.tick_params(axis='both', which='major', labelsize=10)
     ax.grid(axis='y', alpha=0.25, linestyle='-', linewidth=0.8)

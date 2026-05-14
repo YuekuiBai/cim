@@ -10,10 +10,10 @@ plt.rcParams['font.size'] = 11
 plt.rcParams['axes.titlesize'] = 13
 plt.rcParams['axes.labelsize'] = 11
 
-OUTPUT_DIR = "/mnt/storage2/zyc/CIM 比赛/赛道 5/赛题 2/results/figures"
+OUTPUT_DIR = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/图表"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-base = "/mnt/storage2/zyc/CIM 比赛/赛道 5/赛题 2/results"
+base = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/结果"
 with open(f"{base}/innovation_gpu1/results.json", "r") as f:
     innovation_data = json.load(f)
 
@@ -49,9 +49,9 @@ ax.legend(loc='lower right')
 ax.grid(axis='x', alpha=0.2)
 
 plt.tight_layout()
-plt.savefig(f"{OUTPUT_DIR}/innovation_comparison.png", dpi=200, bbox_inches='tight')
+plt.savefig(f"{OUTPUT_DIR}/图4_创新算法对比.png", dpi=200, bbox_inches='tight')
 plt.close()
-print(f"\n已保存：{OUTPUT_DIR}/innovation_comparison.png")
+print(f"\n已保存：{OUTPUT_DIR}/图4_创新算法对比.png")
 
 # 2. ablation_study
 ablation_methods = ['Baseline', 'STE+Layerwise', 'STE+BiasCorrection', 'Adaptive-STE-Sqrt']
@@ -80,9 +80,9 @@ ax.set_ylim(83, 86)
 ax.grid(axis='y', alpha=0.3)
 
 plt.tight_layout()
-plt.savefig(f"{OUTPUT_DIR}/ablation_study.png", dpi=200, bbox_inches='tight')
+plt.savefig(f"{OUTPUT_DIR}/图10_消融实验.png", dpi=200, bbox_inches='tight')
 plt.close()
-print(f"已保存：{OUTPUT_DIR}/ablation_study.png")
+print(f"已保存：{OUTPUT_DIR}/图10_消融实验.png")
 
 # 3. training_curves
 fig, axes = plt.subplots(1, 2, figsize=(13, 5))
@@ -114,9 +114,9 @@ axes[1].legend(fontsize=8)
 axes[1].grid(True, alpha=0.2)
 
 plt.tight_layout()
-plt.savefig(f"{OUTPUT_DIR}/training_curves.png", dpi=200, bbox_inches='tight')
+plt.savefig(f"{OUTPUT_DIR}/图2_训练曲线.png", dpi=200, bbox_inches='tight')
 plt.close()
-print(f"已保存：{OUTPUT_DIR}/training_curves.png")
+print(f"已保存：{OUTPUT_DIR}/图2_训练曲线.png")
 
 # 4. schedule_comparison
 noise_levels = np.linspace(0, 2.0, 100)
@@ -141,8 +141,8 @@ ax.grid(True, alpha=0.3)
 ax.set_ylim(0, 1.05)
 
 plt.tight_layout()
-plt.savefig(f"{OUTPUT_DIR}/schedule_comparison.png", dpi=200, bbox_inches='tight')
+plt.savefig(f"{OUTPUT_DIR}/图3_调度策略对比.png", dpi=200, bbox_inches='tight')
 plt.close()
-print(f"已保存：{OUTPUT_DIR}/schedule_comparison.png")
+print(f"已保存：{OUTPUT_DIR}/图3_调度策略对比.png")
 
 print("\n所有图表生成完成！")

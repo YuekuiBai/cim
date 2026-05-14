@@ -33,7 +33,7 @@ test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False, num_worker
 def load_baseline_model():
     model = models.resnet18(weights=None)
     model.fc = nn.Linear(model.fc.in_features, 10)
-    checkpoint = torch.load('./results/baseline_model.pth', map_location='cpu')
+    checkpoint = torch.load('../结果/baseline_model.pth', map_location='cpu')
     model.load_state_dict(checkpoint)
     return model.to(device)
 
@@ -145,7 +145,7 @@ print(f"| 4-bit | {quant4_decay:.2f}% | {quant4_decay - baseline_decay:+.2f}% |"
 quant2_decay = results['quant_2bit'][0.0] - results['quant_2bit'][0.5]
 print(f"| 2-bit | {quant2_decay:.2f}% | {quant2_decay - baseline_decay:+.2f}% |")
 
-save_dir = './results/extended_research'
+save_dir = '../结果/extended_research'
 os.makedirs(save_dir, exist_ok=True)
 
 with open(f'{save_dir}/quantization_vs_nonlinear.json', 'w') as f:

@@ -108,18 +108,18 @@ def train_baseline():
 
         if test_acc > best_acc:
             best_acc = test_acc
-            os.makedirs('results', exist_ok=True)
+            os.makedirs('../结果/baseline', exist_ok=True)
             torch.save({
                 'model_state_dict': model.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
                 'epoch': epoch,
                 'test_acc': test_acc
-            }, 'results/baseline/best_model.pth')
+            }, '../结果/baseline/best_model.pth')
             print(f'  -> 保存最佳模型 (精度: {best_acc:.2f}%)')
 
     print('=' * 60)
     print(f'训练完成! 最佳精度: {best_acc:.2f}%')
-    print(f'模型已保存至: results/baseline_model.pth')
+    print(f'模型已保存至: ../结果/baseline/best_model.pth')
 
     return best_acc
 

@@ -120,7 +120,7 @@ for model_name, base_model in models_config:
     else:
         base_model.classifier[1] = nn.Linear(base_model.classifier[1].in_features, 10)
 
-    model_path = f'./results/extended_research/{model_name}_cifar10.pth'
+    model_path = f'../结果/extended_research/{model_name}_cifar10.pth'
 
     if os.path.exists(model_path):
         print(f"加载已有模型: {model_path}")
@@ -128,7 +128,7 @@ for model_name, base_model in models_config:
     else:
         base_model = base_model.to(device)
         base_model = train_model(base_model, epochs=50)
-        os.makedirs('./results/extended_research', exist_ok=True)
+        os.makedirs('../结果/extended_research', exist_ok=True)
         torch.save(base_model.state_dict(), model_path)
         print(f"模型已保存: {model_path}")
 
@@ -155,7 +155,7 @@ for model_name, data in results.items():
     params = data['params'] / 1e6
     print(f"| {model_name} | {params:.1f}M | {sens[0.0]:.2f}% | {sens[0.1]:.2f}% | {sens[0.2]:.2f}% | {sens[0.3]:.2f}% | {sens[0.4]:.2f}% | {sens[0.5]:.2f}% | {avg:.2f}% | {decay:.2f}% |")
 
-save_dir = './results/extended_research'
+save_dir = '../结果/extended_research'
 os.makedirs(save_dir, exist_ok=True)
 
 with open(f'{save_dir}/network_structure_results.json', 'w') as f:

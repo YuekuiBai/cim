@@ -31,7 +31,7 @@ class TrainingConfig:
                  warmup_epochs: int = 5,
                  alpha: float = 0.0,
                  alpha_schedule: str = 'fixed',  # 'fixed', 'gradual', 'random'
-                 save_dir: str = 'results/training'):
+                 save_dir: str = '../结果/training'):
         self.epochs = epochs
         self.batch_size = batch_size
         self.lr = lr
@@ -264,7 +264,7 @@ def finetune_with_nonlinearity(model: nn.Module, train_loader, test_loader,
         lr=lr,
         alpha=alpha,
         alpha_schedule='fixed',
-        save_dir=f'results/training/finetune_alpha_{alpha}'
+        save_dir=f'../结果/training/finetune_alpha_{alpha}'
     )
     
     trainer = NonlinearityAwareTrainer(model, config, device)
@@ -297,7 +297,7 @@ def train_from_scratch(model_fn: Callable, train_loader, test_loader,
         lr=lr,
         alpha=alpha,
         alpha_schedule='fixed',
-        save_dir=f'results/training/scratch_alpha_{alpha}'
+        save_dir=f'../结果/training/scratch_alpha_{alpha}'
     )
     
     trainer = NonlinearityAwareTrainer(model, config, device)
@@ -372,8 +372,8 @@ def compare_training_strategies(model_fn: Callable, pretrained_model: nn.Module,
         print(f"  从头训练 - 最佳精度: {scratch_results['best_accuracy']:.2f}%")
     
     # 保存对比结果
-    os.makedirs('results/training/comparison', exist_ok=True)
-    with open('results/training/comparison/comparison_results.json', 'w') as f:
+    os.makedirs('../结果/training/comparison', exist_ok=True)
+    with open('../结果/training/comparison/comparison_results.json', 'w') as f:
         json.dump(results['comparison'], f, indent=2)
     
     return results

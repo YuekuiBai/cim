@@ -57,7 +57,7 @@ def create_problem2_ppt():
     prs.slide_height = Inches(7.5)
 
     base_path = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2"
-    figures_path = os.path.join(base_path, "results", "figures")
+    figures_path = os.path.join(base_path, "图表")
 
     add_title_slide(prs, "基于直通估计器的噪声感知训练框架设计", "赛道五：存算算法 - 赛题二\n2026 InnoCIM高校挑战赛")
 
@@ -95,7 +95,7 @@ def create_problem2_ppt():
         "NoisyLinear/NoisyConv2d：带噪声的神经网络层",
         "STEGradientEstimator：自适应梯度估计",
         "支持多种噪声调度策略"
-    ], os.path.join(figures_path, "framework_architecture.png"))
+    ], os.path.join(figures_path, "图1_框架架构图.png"))
 
     add_content_slide(prs, "创新算法 - 自适应STE", [
         "问题：固定缩放因子无法适应不同噪声水平下的梯度估计需求",
@@ -107,7 +107,7 @@ def create_problem2_ppt():
         "实验表明：Sqrt调度在所有噪声水平下表现最佳"
     ])
 
-    add_content_slide(prs, "调度策略对比", [], os.path.join(figures_path, "schedule_comparison.png"))
+    add_content_slide(prs, "调度策略对比", [], os.path.join(figures_path, "图3_调度策略对比.png"))
 
     add_content_slide(prs, "创新算法 - 辅助技术", [
         "噪声感知正则化：约束权重分布紧密度，L2正则化+噪声方差估计",
@@ -130,21 +130,21 @@ def create_problem2_ppt():
         "STE+Layerwise: 84.82%",
         "STE+BiasCorrection: 85.16%",
         "自适应STE-Sqrt与基准相当，显著优于其他变体"
-    ], os.path.join(figures_path, "innovation_comparison.png"))
+    ], os.path.join(figures_path, "图4_创新算法对比.png"))
 
-    add_content_slide(prs, "训练过程分析", [], os.path.join(figures_path, "training_curves.png"))
+    add_content_slide(prs, "训练过程分析", [], os.path.join(figures_path, "图2_训练曲线.png"))
 
-    add_content_slide(prs, "噪声鲁棒性分析", [], os.path.join(figures_path, "noise_robustness.png"))
+    add_content_slide(prs, "噪声鲁棒性分析", [], os.path.join(figures_path, "图8_噪声鲁棒性.png"))
 
-    add_content_slide(prs, "消融实验分析", [], os.path.join(figures_path, "ablation_study.png"))
+    add_content_slide(prs, "消融实验分析", [], os.path.join(figures_path, "图10_消融实验.png"))
 
-    add_content_slide(prs, "敏感性分析", [], os.path.join(figures_path, "sensitivity_analysis.png"))
+    add_content_slide(prs, "敏感性分析", [], os.path.join(figures_path, "图7_敏感性分析.png"))
 
     add_content_slide(prs, "统计分析结果", [
         "t检验：p<0.05，方法间存在显著差异",
         "ANOVA：F检验验证组间差异显著性",
         "效应量Cohen's d：大于0.5为中等效应"
-    ], os.path.join(figures_path, "statistical_analysis.png"))
+    ], os.path.join(figures_path, "图12_统计分析.png"))
 
     add_content_slide(prs, "主要创新点", [
         "创新一：自适应STE梯度估计，根据实时噪声水平动态调整梯度缩放因子",

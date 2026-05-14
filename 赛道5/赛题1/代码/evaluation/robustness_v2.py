@@ -424,7 +424,7 @@ def plot_robustness_comparison(results: Dict, save_path: str):
 def comprehensive_robustness_analysis(model: nn.Module, train_loader, test_loader,
                                        nat_models: Dict[float, nn.Module],
                                        alpha_values: List[float], device: torch.device,
-                                       save_dir: str = 'results/task3_robustness') -> Dict:
+                                       save_dir: str = '../结果/task3_robustness') -> Dict:
     """
     综合鲁棒性分析 - 改进版
 

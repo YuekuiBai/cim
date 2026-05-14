@@ -15,11 +15,11 @@ plt.rcParams['axes.titlesize'] = 13
 plt.rcParams['axes.labelsize'] = 11
 plt.rcParams['legend.fontsize'] = 9
 
-OUTPUT_DIR = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/results/figures"
+OUTPUT_DIR = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/图表"
 
 def load_real_data():
     """加载所有真实实验数据"""
-    base = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/results"
+    base = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题2/结果"
 
     with open(f"{base}/innovation/results.json", "r") as f:
         innovation_data = json.load(f)
@@ -70,9 +70,9 @@ def plot_ablation_from_real_data(innovation_data):
     ax.legend(loc='lower right')
 
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/ablation_study.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图10_消融实验.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"已更新: {OUTPUT_DIR}/ablation_study.png")
+    print(f"已更新: {OUTPUT_DIR}/图10_消融实验.png")
 
 def plot_statistical_from_real_data(innovation_data):
     """从真实数据绘制统计分析图（单次实验，无多次运行）"""
@@ -129,9 +129,9 @@ def plot_statistical_from_real_data(innovation_data):
                 f'{gap:.2f}', ha='center', va='bottom', fontsize=8)
 
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/statistical_analysis.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图12_统计分析.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"已更新: {OUTPUT_DIR}/statistical_analysis.png")
+    print(f"已更新: {OUTPUT_DIR}/图12_统计分析.png")
 
 def plot_sensitivity_from_real_data(sensitivity_data):
     """从真实数据绘制敏感性分析图"""
@@ -177,9 +177,9 @@ def plot_sensitivity_from_real_data(sensitivity_data):
     ax.set_ylim(80, 90)
 
     plt.tight_layout()
-    plt.savefig(f"{OUTPUT_DIR}/sensitivity_analysis.png", dpi=150, bbox_inches='tight')
+    plt.savefig(f"{OUTPUT_DIR}/图7_敏感性分析.png", dpi=150, bbox_inches='tight')
     plt.close()
-    print(f"已更新: {OUTPUT_DIR}/sensitivity_analysis.png")
+    print(f"已更新: {OUTPUT_DIR}/图7_敏感性分析.png")
 
 def main():
     print("=" * 60)

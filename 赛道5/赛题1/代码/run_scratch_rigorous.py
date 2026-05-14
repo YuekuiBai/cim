@@ -92,7 +92,7 @@ def train_from_scratch(alpha, epochs=50, lr=0.01):
 
 alpha_values = [0.1, 0.2, 0.3]
 num_runs = 3
-save_dir = './results/task2_training/scratch_rigorous'
+save_dir = '../结果/task2_training/scratch_rigorous'
 os.makedirs(save_dir, exist_ok=True)
 
 scratch_results = {alpha: [] for alpha in alpha_values}

@@ -408,7 +408,7 @@ def plot_architecture_comparison(results: Dict, save_path: str):
 def comprehensive_extended_analysis(model: nn.Module, test_loader,
                                      alpha_values: List[float],
                                      device: torch.device,
-                                     save_dir: str = 'results/extended') -> Dict:
+                                     save_dir: str = '../结果/extended') -> Dict:
     """
     综合拓展分析
     

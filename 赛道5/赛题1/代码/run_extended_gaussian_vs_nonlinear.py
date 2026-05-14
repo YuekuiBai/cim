@@ -35,7 +35,7 @@ test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False, num_worker
 def load_baseline_model():
     model = models.resnet18(weights=None)
     model.fc = nn.Linear(model.fc.in_features, 10)
-    checkpoint = torch.load('./results/baseline_model.pth', map_location='cpu')
+    checkpoint = torch.load('../结果/baseline_model.pth', map_location='cpu')
     model.load_state_dict(checkpoint)
     model = model.to(device)
     return model
@@ -137,7 +137,7 @@ for g_sigma, g_loss in gaussian_losses.items():
         if abs(g_loss - n_loss) < 2.0:
             print(f"高斯噪声 σ={g_sigma:.2f} (衰减={g_loss:+.2f}%) ≈ 非线性 α={n_alpha:.1f} (衰减={n_loss:+.2f}%)")
 
-save_dir = './results/extended_research'
+save_dir = '../结果/extended_research'
 os.makedirs(save_dir, exist_ok=True)
 
 all_results = {

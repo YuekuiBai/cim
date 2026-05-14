@@ -10,7 +10,8 @@ from pptx.enum.text import PP_ALIGN
 from pptx.enum.shapes import MSO_SHAPE
 import os
 
-RESULTS_DIR = '/mnt/storage2/zyc/CIM比赛/赛道5/赛题1/results'
+RESULTS_DIR = '/mnt/storage2/zyc/CIM比赛/赛道5/赛题1/结果'
+FIGURES_DIR = '/mnt/storage2/zyc/CIM比赛/赛道5/赛题1/图表'
 OUTPUT_PATH = '/mnt/storage2/zyc/CIM比赛/赛道5/赛题1/文档/介绍PPT.pptx'
 
 prs = Presentation()
@@ -281,7 +282,7 @@ add_section_slide(prs, "4. 实验结果")
 
 # 第16页：方法对比总览图
 add_image_slide(prs, "4.1 鲁棒性方法综合对比",
-    f"{RESULTS_DIR}/figures/summary_comparison.png",
+    f"{FIGURES_DIR}/summary_comparison.png",
     "各方法在不同非线性强度下的精度表现")
 
 # 第17页：方法对比表格
@@ -302,7 +303,7 @@ add_image_slide(prs, "4.3 微调 vs 从头训练",
 
 # 第19页：量化与非线性对比
 add_image_slide(prs, "4.4 量化 vs 非线性误差",
-    f"{RESULTS_DIR}/figures/quantization_vs_nonlinear.png",
+    f"{FIGURES_DIR}/quantization_vs_nonlinear.png",
     "量化误差与非线性误差的独立处理")
 
 # 第20页：拓展研究 - 章节页

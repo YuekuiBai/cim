@@ -52,8 +52,8 @@ def create_problem1_ppt():
     prs.slide_height = Inches(7.5)
 
     base_path = "/mnt/storage2/zyc/CIM比赛/赛道5/赛题1"
-    figures_path = os.path.join(base_path, "results", "figures")
-    task1_path = os.path.join(base_path, "results", "task1_sensitivity")
+    figures_path = os.path.join(base_path, "图表")
+    task1_path = os.path.join(base_path, "结果", "task1_sensitivity")
 
     add_title_slide(prs, "存算一体芯片中非线性误差对推理精度的影响研究", "赛道五：存算算法 - 赛题一\nHDUer团队")
 

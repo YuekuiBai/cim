@@ -28,14 +28,22 @@
 │   └── config.yaml
 ├── 文档/                     # 项目文档
 │   ├── 技术报告.md           # 完整技术报告
+│   ├── 专利技术交底书.md     # 3篇发明专利（混合Alpha训练/逐层诊断补偿/课程学习）
 │   ├── 拓展研究.md           # 拓展研究成果
 │   ├── ppt提示词.md          # PPT制作指南
 │   └── 演示视频内容.md       # 视频脚本
 ├── 结果/                     # 实验结果
 │   ├── figures/              # 可视化图表
-│   │   ├── experiment_overview.png
-│   │   ├── quantization_vs_nonlinear.png
-│   │   └── summary_comparison.png
+│   │   ├── 图1_实验总览.png
+│   │   ├── 图2_量化与非线性分析.png
+│   │   ├── 图3_方法对比汇总.png
+│   │   ├── 图4_敏感性分析.png
+│   │   ├── 图5_NAT训练曲线.png
+│   │   ├── 图6_微调vs从头训练.png
+│   │   ├── 图7_鲁棒性方法对比.png
+│   │   ├── 图8_网络结构敏感性.png
+│   │   ├── 图9_非线性失真可视化.png
+│   │   └── 图10_误差累积机理.png
 │   ├── task1_sensitivity/    # 任务一结果
 │   ├── task2_training/       # 任务二结果
 │   ├── task3_robustness/     # 任务三结果
@@ -118,9 +126,16 @@ CIFAR-10数据集位于：`/mnt/storage2/zyc/CIM比赛/公共数据集/cifar-10-
 
 ## 图表说明
 
-- `experiment_overview.png`: 实验总览（敏感性分析、方法对比、网络结构、噪声对比）
-- `quantization_vs_nonlinear.png`: 量化位数与非线性联合影响
-- `summary_comparison.png`: 方法对比、网络鲁棒性、噪声等效
+- `图1_实验总览.png`: 实验总览（敏感性分析、方法对比、网络结构、噪声对比）
+- `图2_量化与非线性分析.png`: 量化位数与非线性联合影响
+- `图3_方法对比汇总.png`: 方法对比、网络鲁棒性、噪声等效
+- `图4_敏感性分析.png`: 敏感性分析（精度衰减、MSE热力图、分布偏移、误差累积）
+- `图5_NAT训练曲线.png`: NAT训练过程（train/test loss和accuracy曲线）
+- `图6_微调vs从头训练.png`: 微调策略对比（3-seed严格实验+全alpha对比）
+- `图7_鲁棒性方法对比.png`: 8种鲁棒性增强方法综合对比
+- `图8_网络结构敏感性.png`: ResNet18/34/MobileNetV2网络结构敏感性
+- `图9_非线性失真可视化.png`: 非线性传输函数与增益压缩机理
+- `图10_误差累积机理.png`: 逐层MSE误差分布与累积趋势
 
 ## 评分要点
 

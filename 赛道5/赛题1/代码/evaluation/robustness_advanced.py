@@ -330,7 +330,7 @@ def train_with_pni(model: nn.Module, train_loader, test_loader,
 
 def comprehensive_advanced_robustness_eval(model: nn.Module, train_loader, test_loader,
                                           alpha_values: List[float], device: torch.device,
-                                          save_dir: str = 'results/task3_robustness') -> Dict:
+                                          save_dir: str = '../结果/task3_robustness') -> Dict:
     """
     综合高级鲁棒性评估
 

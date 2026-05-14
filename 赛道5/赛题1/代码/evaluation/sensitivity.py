@@ -380,7 +380,7 @@ def plot_error_accumulation(results: Dict, save_dir: str):
 
 def comprehensive_sensitivity_analysis(model: nn.Module, test_loader, 
                                         alpha_values: List[float], device: torch.device,
-                                        save_dir: str = 'results/sensitivity'):
+                                        save_dir: str = '../结果/sensitivity'):
     """
     综合敏感性分析
     

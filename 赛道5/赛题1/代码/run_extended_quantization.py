@@ -35,7 +35,7 @@ test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False, num_worker
 def load_baseline_model():
     model = models.resnet18(weights=None)
     model.fc = nn.Linear(model.fc.in_features, 10)
-    checkpoint = torch.load('./results/baseline_model.pth', map_location='cpu')
+    checkpoint = torch.load('../结果/baseline_model.pth', map_location='cpu')
     model.load_state_dict(checkpoint)
     return model.to(device)
 
@@ -138,7 +138,7 @@ for alpha in [0.0, 0.3, 0.5]:
     int8_loss = int8_nl_results[0.0] - int8_nl_results[alpha]
     print(f"α={alpha:.1f}: FP32衰减={fp32_loss:.2f}%, FP16衰减={fp16_loss:.2f}%, INT8衰减={int8_loss:.2f}%")
 
-save_dir = './results/extended_research'
+save_dir = '../结果/extended_research'
 os.makedirs(save_dir, exist_ok=True)
 
 all_results = {
