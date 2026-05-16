@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 device = torch.device('cuda:0')
 
 print("="*70)
@@ -31,8 +31,8 @@ test_transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
 ])
 
-train_dataset = CIFAR10(root='./data', train=True, transform=transform, download=False)
-test_dataset = CIFAR10(root='./data', train=False, transform=test_transform, download=False)
+train_dataset = CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=True, transform=transform, download=True)
+test_dataset = CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=False, transform=test_transform, download=True)
 
 train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True, num_workers=8, pin_memory=True)
 test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False, num_workers=8, pin_memory=True)

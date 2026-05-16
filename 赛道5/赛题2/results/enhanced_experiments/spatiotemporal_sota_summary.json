@@ -1,0 +1,25 @@
+{
+  "best_config": "conservative",
+  "best_acc": 52.78,
+  "best_epoch": 43,
+  "all_results": [
+    {
+      "name": "conservative",
+      "best_acc": 52.78,
+      "best_epoch": 43,
+      "final_acc": 50.18
+    },
+    {
+      "name": "moderate",
+      "best_acc": 36.3,
+      "best_epoch": 49,
+      "final_acc": 31.32
+    },
+    {
+      "name": "aggressive",
+      "best_acc": 18.62,
+      "best_epoch": 41,
+      "final_acc": 16.01
+    }
+  ]
+}

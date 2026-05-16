@@ -1,18 +1,26 @@
 {
-  "ns_0.0": {
-    "best_acc": 85.66,
-    "final_acc": 85.66
+  "ns_0.0_inverse": {
+    "best_acc": 84.16,
+    "final_acc": 84.01,
+    "noise_strength": 0.0,
+    "schedule": "inverse"
   },
-  "ns_0.5": {
-    "best_acc": 84.78,
-    "final_acc": 84.78
+  "ns_0.5_inverse": {
+    "best_acc": 82.48,
+    "final_acc": 82.38,
+    "noise_strength": 0.5,
+    "schedule": "inverse"
   },
-  "ns_1.0": {
-    "best_acc": 85.11,
-    "final_acc": 85.09
+  "ns_1.0_inverse": {
+    "best_acc": 83.61,
+    "final_acc": 83.61,
+    "noise_strength": 1.0,
+    "schedule": "inverse"
   },
-  "ns_1.5": {
-    "best_acc": 85.0,
-    "final_acc": 85.0
+  "ns_1.5_inverse": {
+    "best_acc": 83.84,
+    "final_acc": 83.84,
+    "noise_strength": 1.5,
+    "schedule": "inverse"
   }
 }

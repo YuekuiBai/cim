@@ -43,7 +43,7 @@ def load_config(config_path: str) -> dict:
         return yaml.safe_load(f)
 
 
-def get_data_loaders(config: dict):
+def get_data_loaders(config: dict, batch_size=None, num_workers=None):
     """获取数据加载器"""
     train_transform = transforms.Compose([
         transforms.RandomCrop(32, padding=4),
@@ -58,14 +58,14 @@ def get_data_loaders(config: dict):
     ])
 
     root = config.get('dataset', {}).get('root', '/mnt/storage2/zyc/CIM比赛/公共数据集')
-    train_dataset = torchvision.datasets.CIFAR10(root=root, train=True, download=False, transform=train_transform)
-    test_dataset = torchvision.datasets.CIFAR10(root=root, train=False, download=False, transform=test_transform)
+    train_dataset = torchvision.datasets.CIFAR10(root=root, train=True, download=True, transform=train_transform)
+    test_dataset = torchvision.datasets.CIFAR10(root=root, train=False, download=True, transform=test_transform)
 
-    batch_size = config.get('training', {}).get('batch_size', 128)
-    num_workers = config.get('dataset', {}).get('num_workers', 4)
+    bs = batch_size if batch_size is not None else config.get('training', {}).get('batch_size', 128)
+    nw = num_workers if num_workers is not None else config.get('dataset', {}).get('num_workers', 4)
 
-    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers)
-    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=100, shuffle=False, num_workers=num_workers)
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=bs, shuffle=True, num_workers=nw)
+    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=100, shuffle=False, num_workers=nw)
 
     return train_loader, test_loader
 
@@ -172,7 +172,9 @@ def run_task1_design(config: dict, device: torch.device, save_dir: str):
     return results
 
 
-def run_task2_validation(config: dict, device: torch.device, save_dir: str):
+def run_task2_validation(config: dict, device: torch.device, save_dir: str,
+                         noise_strength=None, schedule=None, epochs=None,
+                         batch_size=None, num_workers=None, seed=42):
     """
     任务二：领域任务验证实现
 
@@ -182,13 +184,22 @@ def run_task2_validation(config: dict, device: torch.device, save_dir: str):
     print("任务二：领域任务验证实现")
     print("=" * 70)
 
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+
     ste_config = STEConfig(config.get('ste', {}))
     training_config = config.get('training', {})
 
+    ns_list = [noise_strength] if noise_strength is not None else [0.0, 0.5, 1.0, 1.5]
+    schedule_name = schedule if schedule is not None else 'inverse'
+    num_epochs = epochs if epochs is not None else training_config.get('epochs', 30)
+
     results = {}
 
-    for noise_strength in [0.0, 0.5, 1.0, 1.5]:
-        print(f"\n训练噪声强度 = {noise_strength}")
+    for ns in ns_list:
+        print(f"\n训练噪声强度 = {ns}, 调度策略 = {schedule_name}")
 
         model = get_model(name='resnet18', num_classes=10, pretrained=False)
         model = inject_ste_to_model(model, ste_config)
@@ -198,22 +209,22 @@ def run_task2_validation(config: dict, device: torch.device, save_dir: str):
         optimizer = optim.SGD(model.parameters(), lr=training_config.get('lr', 0.1),
                               momentum=training_config.get('momentum', 0.9),
                               weight_decay=training_config.get('weight_decay', 5e-4))
-        scheduler = CosineAnnealingLR(optimizer, T_max=training_config.get('epochs', 30))
+        scheduler = CosineAnnealingLR(optimizer, T_max=num_epochs)
 
-        train_loader, test_loader = get_data_loaders(config)
+        train_loader, test_loader = get_data_loaders(config, batch_size, num_workers)
 
         best_acc = 0
         history = {'train_loss': [], 'train_acc': [], 'test_acc': []}
 
-        set_model_noise_strength(model, noise_strength if noise_strength > 0 else 0.0)
+        set_model_noise_strength(model, ns if ns > 0 else 0.0)
 
-        for epoch in range(training_config.get('epochs', 30)):
+        for epoch in range(num_epochs):
             model.train()
             running_loss = 0.0
             correct = 0
             total = 0
 
-            pbar = tqdm(train_loader, desc=f'Epoch {epoch+1}/{training_config.get("epochs", 30)}')
+            pbar = tqdm(train_loader, desc=f'Epoch {epoch+1}/{num_epochs}')
             for inputs, targets in pbar:
                 inputs, targets = inputs.to(device), targets.to(device)
 
@@ -257,22 +268,33 @@ def run_task2_validation(config: dict, device: torch.device, save_dir: str):
 
             print(f'Epoch {epoch+1}: Train Acc={train_acc:.2f}%, Test Acc={test_acc:.2f}%')
 
-        results[f'ns_{noise_strength}'] = {
+        ns_key = f'ns_{ns}'
+        if schedule_name:
+            ns_key = f'ns_{ns}_{schedule_name}'
+
+        results[ns_key] = {
             'best_acc': best_acc,
             'final_acc': test_acc,
-            'history': history
+            'history': history,
+            'noise_strength': ns,
+            'schedule': schedule_name
         }
 
         task2_dir = os.path.join(save_dir, 'task2_validation')
         os.makedirs(task2_dir, exist_ok=True)
         torch.save({
             'model_state_dict': model.state_dict(),
-            'best_acc': best_acc
-        }, os.path.join(task2_dir, f'model_ns_{noise_strength}.pth'))
+            'best_acc': best_acc,
+            'noise_strength': ns,
+            'schedule': schedule_name,
+            'seed': seed
+        }, os.path.join(task2_dir, f'model_{ns_key}_seed{seed}.pth'))
 
     os.makedirs(os.path.join(save_dir, 'task2_validation'), exist_ok=True)
     with open(os.path.join(save_dir, 'task2_validation', 'results.json'), 'w') as f:
-        json.dump({k: {'best_acc': v['best_acc'], 'final_acc': v['final_acc']} for k, v in results.items()}, f, indent=2)
+        json.dump({k: {'best_acc': v['best_acc'], 'final_acc': v['final_acc'],
+                        'noise_strength': v.get('noise_strength'), 'schedule': v.get('schedule')}
+                   for k, v in results.items()}, f, indent=2)
 
     print("\n任务二完成！")
 
@@ -374,6 +396,8 @@ def main():
                        help='要运行的任务')
     parser.add_argument('--device', type=str, default='cuda:1', help='设备')
     parser.add_argument('--save_dir', type=str, default='../结果', help='结果保存目录')
+    parser.add_argument('--batch_size', type=int, default=256, help='批次大小')
+    parser.add_argument('--num_workers', type=int, default=4, help='数据加载线程数')
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -387,12 +411,14 @@ def main():
 
     if args.task == 'all':
         run_task1_design(config, device, args.save_dir)
-        run_task2_validation(config, device, args.save_dir)
+        run_task2_validation(config, device, args.save_dir,
+                            batch_size=args.batch_size, num_workers=args.num_workers)
         run_task3_evaluation(config, device, args.save_dir)
     elif args.task == 'task1':
         run_task1_design(config, device, args.save_dir)
     elif args.task == 'task2':
-        run_task2_validation(config, device, args.save_dir)
+        run_task2_validation(config, device, args.save_dir,
+                            batch_size=args.batch_size, num_workers=args.num_workers)
     elif args.task == 'task3':
         run_task3_evaluation(config, device, args.save_dir)
 

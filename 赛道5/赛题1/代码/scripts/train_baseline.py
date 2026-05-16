@@ -13,7 +13,7 @@ from tqdm import tqdm
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from models.resnet import get_model
 
@@ -41,10 +41,10 @@ def train_baseline():
     # 加载数据
     print('加载数据...')
     batch_size = 128  # GPU上可以用更大的batch size
-    trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=False, transform=transform_train)
+    trainset = torchvision.datasets.CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=True, download=True, transform=transform_train)
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size, shuffle=True, num_workers=4, pin_memory=True)
     
-    testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=False, transform=transform_test)
+    testset = torchvision.datasets.CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=False, download=True, transform=transform_test)
     testloader = torch.utils.data.DataLoader(testset, batch_size=100, shuffle=False, num_workers=4, pin_memory=True)
     
     # 创建模型（不使用预训练，从头训练）

@@ -120,8 +120,9 @@ class NoiseInjector(nn.Module):
         prog_noise_std = self.noise_config.get('prog_noise_std', 0.01) * self.noise_strength
         drift_factor = self.noise_config.get('drift_factor', 0.005) * self.noise_strength
 
-        prog_noise = torch.randn_like(weight) * prog_noise_std
-        drift_noise = torch.randn_like(weight) * drift_factor * torch.abs(weight)
+        noise_device = weight.device
+        prog_noise = torch.randn(weight.shape, device=noise_device, dtype=weight.dtype) * prog_noise_std
+        drift_noise = torch.randn(weight.shape, device=noise_device, dtype=weight.dtype) * drift_factor * torch.abs(weight)
 
         return weight + prog_noise + drift_noise
 
@@ -133,7 +134,8 @@ class NoiseInjector(nn.Module):
         crosstalk_factor = self.noise_config.get('crosstalk_factor', 0.002) * self.noise_strength
 
         if crosstalk_factor > 0:
-            crosstalk = torch.randn_like(input) * crosstalk_factor * torch.norm(input, dim=-1, keepdim=True)
+            noise_device = input.device
+            crosstalk = torch.randn(input.shape, device=noise_device, dtype=input.dtype) * crosstalk_factor * torch.norm(input, dim=-1, keepdim=True)
             return input + crosstalk
         return input
 

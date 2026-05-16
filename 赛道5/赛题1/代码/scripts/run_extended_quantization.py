@@ -1,5 +1,6 @@
 import os
 import json
+import copy
 import torch
 import torch.nn as nn
 from torchvision import models, datasets, transforms
@@ -7,7 +8,7 @@ from torch.utils.data import DataLoader
 import torch.nn.intrinsic as nni
 import torch.nn.quantized as nnq
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 device = torch.device('cuda:0')
 
 print("="*70)
@@ -26,8 +27,8 @@ test_transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
 ])
 
-train_dataset = datasets.CIFAR10(root='./data', train=True, transform=transform, download=False)
-test_dataset = datasets.CIFAR10(root='./data', train=False, transform=test_transform, download=False)
+train_dataset = datasets.CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=True, transform=transform, download=True)
+test_dataset = datasets.CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=False, transform=test_transform, download=True)
 
 train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True, num_workers=8, pin_memory=True)
 test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False, num_workers=8, pin_memory=True)
@@ -73,6 +74,18 @@ def evaluate(model, test_loader):
             correct += predicted.eq(targets).sum().item()
     return 100. * correct / total
 
+def evaluate_fp16(model, test_loader):
+    model.eval()
+    correct, total = 0, 0
+    with torch.no_grad():
+        for inputs, targets in test_loader:
+            inputs, targets = inputs.to(device).half(), targets.to(device)
+            outputs = model(inputs)
+            _, predicted = outputs.max(1)
+            total += targets.size(0)
+            correct += predicted.eq(targets).sum().item()
+    return 100. * correct / total
+
 print("\n加载基准模型...")
 baseline_model = load_baseline_model()
 baseline_acc = evaluate(baseline_model, test_loader)
@@ -98,9 +111,10 @@ print("="*70)
 fp16_nl_results = {}
 
 for alpha in nl_alphas:
-    model = NonLinearWrapper(baseline_model, alpha)
+    model_copy = copy.deepcopy(baseline_model)
+    model = NonLinearWrapper(model_copy, alpha)
     model = model.half()
-    acc = evaluate(model, test_loader)
+    acc = evaluate_fp16(model, test_loader)
     fp16_nl_results[alpha] = acc
     print(f"FP16 + α={alpha:.1f}: {acc:.2f}%")
 

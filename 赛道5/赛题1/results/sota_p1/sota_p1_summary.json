@@ -1,0 +1,33 @@
+{
+  "best_config": "resnet34_alpha0.2_long_mixup_ema",
+  "best_acc": 88.43,
+  "best_epoch": 140,
+  "best_acc_ema": 17.64,
+  "best_epoch_ema": 14,
+  "all_results": [
+    {
+      "name": "resnet34_alpha0.3_mixup_ema",
+      "best_acc": 87.85,
+      "best_epoch": 95,
+      "best_acc_ema": 17.1,
+      "best_epoch_ema": 30,
+      "final_acc": 87.58
+    },
+    {
+      "name": "resnet34_alpha0.2_long_mixup_ema",
+      "best_acc": 88.43,
+      "best_epoch": 140,
+      "best_acc_ema": 17.64,
+      "best_epoch_ema": 14,
+      "final_acc": 88.04
+    },
+    {
+      "name": "resnet50_alpha0.2_mixup_ema",
+      "best_acc": 90.02,
+      "best_epoch": 95,
+      "best_acc_ema": 10.0,
+      "best_epoch_ema": 1,
+      "final_acc": 89.58
+    }
+  ]
+}

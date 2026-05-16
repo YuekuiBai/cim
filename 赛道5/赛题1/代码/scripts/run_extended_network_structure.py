@@ -6,7 +6,7 @@ import torch.optim as optim
 from torchvision import models, datasets, transforms
 from torch.utils.data import DataLoader
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '2'
 device = torch.device('cuda:0')
 
 print("="*70)
@@ -25,8 +25,8 @@ test_transform = transforms.Compose([
     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
 ])
 
-train_dataset = datasets.CIFAR10(root='./data', train=True, transform=transform, download=False)
-test_dataset = datasets.CIFAR10(root='./data', train=False, transform=test_transform, download=False)
+train_dataset = datasets.CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=True, transform=transform, download=True)
+test_dataset = datasets.CIFAR10(root='/mnt/storage2/zyc/CIM比赛/公共数据集', train=False, transform=test_transform, download=True)
 
 train_loader = DataLoader(train_dataset, batch_size=256, shuffle=True, num_workers=8, pin_memory=True)
 test_loader = DataLoader(test_dataset, batch_size=256, shuffle=False, num_workers=8, pin_memory=True)
@@ -91,7 +91,7 @@ def test_nonlinear_sensitivity(model, model_name):
     print(f"\n--- {model_name} 非线性敏感度测试 ---")
 
     baseline_acc = evaluate(model, test_loader)
-    results['baseline'] = baseline_acc
+    results[0.0] = baseline_acc
     print(f"α=0.0 (基准): {baseline_acc:.2f}%")
 
     for alpha in nl_alphas[1:]:

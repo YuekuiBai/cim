@@ -1,0 +1,25 @@
+{
+  "best_config": "moderate_fixed",
+  "best_acc": 87.35,
+  "best_epoch": 50,
+  "all_results": [
+    {
+      "name": "conservative_fixed",
+      "best_acc": 87.05,
+      "best_epoch": 47,
+      "final_acc": 86.95
+    },
+    {
+      "name": "moderate_fixed",
+      "best_acc": 87.35,
+      "best_epoch": 50,
+      "final_acc": 87.35
+    },
+    {
+      "name": "aggressive_fixed",
+      "best_acc": 84.31,
+      "best_epoch": 50,
+      "final_acc": 84.31
+    }
+  ]
+}

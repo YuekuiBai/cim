@@ -38,7 +38,7 @@ extended:
 # 数据集配置
 dataset:
   name: CIFAR10
-  root: ../data
+  root: /mnt/storage2/zyc/CIM比赛/公共数据集
   image_size: 32  # CIFAR-10原始尺寸，更快
   num_workers: 2
 

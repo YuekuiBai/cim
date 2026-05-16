@@ -1,0 +1,37 @@
+{
+  "best_config": "ultra_long_train",
+  "best_acc": 88.81,
+  "best_epoch": 196,
+  "all_results": [
+    {
+      "name": "enhanced_mixup",
+      "best_acc": 88.37,
+      "best_epoch": 149,
+      "final_acc": 88.18
+    },
+    {
+      "name": "mixup_label_smooth",
+      "best_acc": 88.79,
+      "best_epoch": 145,
+      "final_acc": 88.56
+    },
+    {
+      "name": "nesterov_strong_reg",
+      "best_acc": 86.86,
+      "best_epoch": 150,
+      "final_acc": 86.86
+    },
+    {
+      "name": "ultra_long_train",
+      "best_acc": 88.81,
+      "best_epoch": 196,
+      "final_acc": 88.77
+    },
+    {
+      "name": "high_noise",
+      "best_acc": 88.24,
+      "best_epoch": 148,
+      "final_acc": 88.14
+    }
+  ]
+}

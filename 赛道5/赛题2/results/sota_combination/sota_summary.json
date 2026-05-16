@@ -1,0 +1,37 @@
+{
+  "best_config": "mixup_enhanced",
+  "best_acc": 88.74,
+  "best_epoch": 98,
+  "all_results": [
+    {
+      "name": "base_combination",
+      "best_acc": 87.97,
+      "best_epoch": 96,
+      "final_acc": 87.91
+    },
+    {
+      "name": "mixup_enhanced",
+      "best_acc": 88.74,
+      "best_epoch": 98,
+      "final_acc": 88.61
+    },
+    {
+      "name": "label_smoothing",
+      "best_acc": 87.76,
+      "best_epoch": 100,
+      "final_acc": 87.76
+    },
+    {
+      "name": "sam_optimizer",
+      "best_acc": 87.03,
+      "best_epoch": 100,
+      "final_acc": 87.03
+    },
+    {
+      "name": "full_combination",
+      "best_acc": 87.23,
+      "best_epoch": 95,
+      "final_acc": 87.21
+    }
+  ]
+}

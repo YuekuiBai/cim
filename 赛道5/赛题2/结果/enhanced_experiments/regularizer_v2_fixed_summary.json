@@ -1,0 +1,37 @@
+{
+  "best_config": "light",
+  "best_acc": 80.71,
+  "best_epoch": 46,
+  "all_results": [
+    {
+      "name": "light",
+      "best_acc": 80.71,
+      "best_epoch": 46,
+      "final_acc": 79.8
+    },
+    {
+      "name": "moderate",
+      "best_acc": 80.57,
+      "best_epoch": 46,
+      "final_acc": 79.92
+    },
+    {
+      "name": "l2_only",
+      "best_acc": 80.69,
+      "best_epoch": 45,
+      "final_acc": 80.2
+    },
+    {
+      "name": "smooth_only",
+      "best_acc": 80.18,
+      "best_epoch": 42,
+      "final_acc": 79.89
+    },
+    {
+      "name": "no_reg",
+      "best_acc": 80.67,
+      "best_epoch": 46,
+      "final_acc": 80.05
+    }
+  ]
+}
