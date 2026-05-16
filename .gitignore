@@ -17,22 +17,36 @@ dist/
 *.onnx
 *.h5
 *.ckpt
+*.safetensors
 
 # Data and datasets
 data/
+datasets/
 *.tar
 *.gz
 *.zip
 *.npy
 *.npz
+*.csv
+*.parquet
 
-# Results - exclude large files but keep structure
-results/*.pth
-results/*.pt
+# Results directories
+results/
+结果/
 
 # Logs
 *.log
 logs/
+
+# Checkpoints
+checkpoints/
+checkpoints_*/
+
+# Charts and images (keep source, exclude generated)
+图表/*.png
+图表/*.jpg
+图表/*.pdf
+图表/*.svg
 
 # OS
 .DS_Store
@@ -56,18 +70,27 @@ Thumbs.db
 venv/
 env/
 ENV/
+.venv/
 
 # Temporary files
 *.tmp
 *.bak
 *.cache
+*.pyc
 
 # Large files
 *.mp4
+*.avi
+*.mov
 *.pptx
-# 模型权重
-*.pth
-*.pt
-*.onnx
-*.h5
-*.ckpt
+*.xlsx
+*.docx
+
+# System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
